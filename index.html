@@ -3,313 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IT小章提供专业的IT服务，包括系统维护、编程服务和技术咨询。">
-    <title>IT小章 - 专业IT服务</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>IT小章 - 技术服务专家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --text-color: #1f2937;
-            --background-color: #f3f4f6;
+        /* 对话框背景遮罩 */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 30;
         }
-        .hover-scale:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease-in-out;
+        /* 对话框 */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            z-index: 40;
+            text-align: center; /* 确保文本居中显示 */
+        }
+        /* 关闭按钮 */
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        /* 邮箱按钮样式 */
+        .email-button {
+            display: inline-block;
+            background-color: #2563eb; /* Tailwind 的 bg-blue-600 */
+            color: #ffffff; /* Tailwind 的 text-white */
+            padding: 0.5rem 1rem; /* Tailwind 的 px-4 py-2 */
+            border-radius: 0.5rem; /* Tailwind 的 rounded-lg */
+            text-decoration: none; /* 去掉链接下划线 */
+            transition: background-color 0.3s ease; /* 平滑的背景色变化过渡 */
+        }
+        .email-button:hover {
+            background-color: #1d4ed8; /* Tailwind 的 hover:bg-blue-700 */
         }
     </style>
 </head>
-<body class="font-sans text-gray-800 bg-gray-100">
-    <header class="bg-blue-600 text-white">
-        <div class="container mx-auto px-4 py-4 max-w-6xl">
-            <nav class="flex justify-between items-center">
-                <h1 id="it小章" class="text-2xl md:text-3xl font-bold">IT小章</h1>
-                <ul class="hidden md:flex space-x-4">
-                    <li><a href="#services" class="hover:text-blue-200 transition duration-300">服务</a></li>
-                    <li><a href="#pricing" class="hover:text-blue-200 transition duration-300">价格</a></li>
-                    <li><a href="#reviews" class="hover:text-blue-200 transition duration-300">评价</a></li>
-                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">联系我</a></li>
-                </ul>
-                <button class="md:hidden" aria-label="打开菜单">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                </button>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section id="services" class="py-20 bg-gray-100">
-            <div class="container mx-auto px-4 max-w-6xl">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">服务项目</h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
-                        <div class="bg-blue-600 text-white p-4">
-                            <svg class="w-10 h-10 mb-2 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                            <h3 class="text-2xl font-semibold text-center">系统维护</h3>
-                        </div>
-                        <ul class="p-6 space-y-2">
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>安装和重装操作系统</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>清理病毒和恶意软件</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>系统优化与维护</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>驱动问题</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
-                        <div class="bg-blue-600 text-white p-4">
-                            <svg class="w-10 h-10 mb-2 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                            <h3 class="text-2xl font-semibold text-center">编程服务</h3>
-                        </div>
-                        <ul class="p-6 space-y-2">
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>定制脚本</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>定制网页</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>解决编程相关问题</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
-                        <div class="bg-blue-600 text-white p-4">
-                            <svg class="w-10 h-10 mb-2 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
-                            <h3 class="text-2xl font-semibold text-center">咨询服务</h3>
-                        </div>
-                        <ul class="p-6 space-y-2">
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>提供技术咨询与支持</li>
-                            <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>客户操作培训</li>
-                        </ul>
-                    </div>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <header class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-md p-8 mb-12">
+            <div class="md:w-1/3 flex justify-center md:justify-start mb-6 md:mb-0">
+                <div class="w-40 h-40 relative">
+                    <img src="https://49eee4f.webp.li/WALLE2.png" alt="IT小章头像" class="w-full h-full object-cover">
                 </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md hover-scale">
-                        <svg class="w-10 h-10 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
-                        <h4 class="text-xl font-semibold mb-2">办公自动化</h4>
-                        <ul class="list-disc list-inside">
-                            <li>重复操作自动化</li>
-                            <li>批量处理</li>
-                        </ul>
+            </div>
+            <div class="md:w-2/3 md:pl-8">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">IT小章</h1>
+                <p class="text-lg text-gray-600 mb-6">资深IT服务专家，专注于全面技术解决方案。</p>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <button id="openModalButton" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                            🌎微信：xiaozhang1609
+                        </button>
                     </div>
-
-                    <div class="bg-white p-6 rounded-lg shadow-md hover-scale">
-                        <svg class="w-10 h-10 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
-                        <h4 class="text-xl font-semibold mb-2">网络维修</h4>
-                        <ul class="list-disc list-inside">
-                            <li>配置和维护网络设备</li>
-                            <li>解决网络连接问题</li>
-                            <li>优化无线网络</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-lg shadow-md hover-scale">
-                        <svg class="w-10 h-10 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
-                        <h4 class="text-xl font-semibold mb-2">数据服务</h4>
-                        <ul class="list-disc list-inside">
-                            <li>数据备份与恢复</li>
-                            <li>数据迁移</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-lg shadow-md hover-scale">
-                        <svg class="w-10 h-10 text-blue-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-</svg>
-                        <h4 class="text-xl font-semibold mb-2">网站建设</h4>
-                        <ul class="list-disc list-inside">
-                            <li>网站搭建运维</li>
-                            <li>网站优化</li>
-                            <li>响应式设计</li>
-                        </ul>
+                    <div class="flex items-center">
+                        <a href="mailto:xiaozhang.tech@hotmail.com" class="email-button">
+                            📧邮箱：xiaozhang.tech@hotmail.com
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="pricing" class="py-20 bg-white">
-            <div class="container mx-auto px-4 max-w-6xl">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">价格方案</h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
-                        <div class="bg-blue-600 text-white p-4">
-                            <h3 class="text-2xl font-semibold text-center">系统维护</h3>
-                        </div>
-                        <div class="p-6">
-                            <div class="text-center mb-4">
-                                <span class="text-4xl font-bold">¥20</span>
-                                <span class="text-gray-600">/起</span>
-                            </div>
-                            <ul class="space-y-2">
-                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>重装系统</li>
-                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>病毒清理</li>
-                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>系统优化</li>
-                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>驱动更新</li>
-                            </ul>
-                            <div class="text-center mt-6">
-                                <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">立即预约</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
-                        <div class="bg-blue-600 text-white p-4">
-                            <h3 class="text-2xl font-semibold text-center">编程服务</h3>
-                        </div>
-                        <div class="p-6">
-                            <div class="text-center mb-4">
-                                <span class="text-4xl font-bold">¥100</span>
-                                <span class="text-gray-600">/起</span>
-                            </div>
-                            <ul class="space-y-2">
-                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>定制脚本</li>
-                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>网页开发</li>
-                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>程序调试</li>
-                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>代码优化</li>
-                            </ul>
-                            <div class="text-center mt-6">
-                                <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">获取报价</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
-                        <div class="bg-blue-600 text-white p-4">
-                            <h3 class="text-2xl font-semibold text-center">咨询服务</h3>
-                        </div>
-                        <div class="p-6">
-                            <div class="text-center mb-4">
-                                <span class="text-4xl font-bold">¥25</span>
-                                <span class="text-gray-600">/起</span>
-                            </div>
-                            <ul class="space-y-2">
-                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>技术咨询</li>
-                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>问题诊断</li>
-                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>解决方案</li>
-                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>远程指导</li>
-                            </ul>
-                            <div class="text-center mt-6">
-                                <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">预约咨询</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-12 text-center">
-                    <p class="mb-4">需要定制服务或有其他问题？请与我们联系获取个性化方案。</p>
-                    <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-lg font-semibold">联系我们</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="reviews" class="py-20 bg-gray-100">
-            <div class="container mx-auto px-4 max-w-6xl">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">客户评价</h2>
-                <div id="reviews-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- 客户评价将通过 JavaScript 动态加载 -->
-                </div>
-            </div>
-        </section>
-
-
-          <div id="contact" class="section py-20 bg-white">
-            <div class="container mx-auto px-4 max-w-6xl">
-              <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">联系我</h2>
-              
-              <div class="bg-white rounded-lg shadow-xl p-8 w-full max-w-2xl mx-auto">
-                <h3 class="text-2xl font-semibold mb-6 text-center">联系方式</h3>
-                
-                <div class="grid grid-cols-2 gap-6">
-                  <div class="flex items-center">
-                    <svg class="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
-                    <span class="text-lg">微信: xiaozhang1609</span>
-                  </div>
-                  
-                  
-                  <div class="flex items-center">
-                    <svg class="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-                    <a href="https://space.bilibili.com/3546607630944387" class="text-lg text-blue-600 hover:underline">哔哩哔哩</a>
-                  </div>
-                  
-                  <div class="flex items-center">
-                    <svg class="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-                    <a href="https://www.ixigua.com/home/4312724246371000" class="text-lg text-blue-600 hover:underline">西瓜视频</a>
-                  </div>
-                  
-                  <div class="flex items-center">
-                    <svg class="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
-                    <a href="https://itxiaozhang.com" class="text-lg text-blue-600 hover:underline">IT小章博客</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    </main>
-
+        </header>
         
-    </main>
+        <section class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-green-200 pb-2">专业技能</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-blue-600">系统维护</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>重装操作系统</li>
+                        <li>电脑黑屏问题</li>
+                        <li>各种驱动问题</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-green-600">编程服务</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>定制脚本开发</li>
+                        <li>定制网页设计</li>
+                        <li>编程环境问题</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-purple-600">咨询服务</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>技术咨询支持</li>
+                        <li>客户操作培训</li>
+                        <li>各种疑难杂症</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-yellow-600">批量处理</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>重复操作自动化</li>
+                        <li>批处理解决方案</li>
+                        <li>批处理省心定制</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-red-600">软件问题</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>各种软件安装</li>
+                        <li>各种软件卸载</li>
+                        <li>各种软件问题</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-indigo-600">更多服务</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>更多定制服务</li>
+                        <li>更多定制服务</li>
+                        <li>更多定制服务</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4 text-center max-w-6xl">
-            <p>&copy; 2024 IT小章. 版权所有.</p>
-        </div>
-    </footer>
+        <section class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-2xl font-semibold mb-8 text-gray-700 border-b-2 border-yellow-200 pb-2">价格方案</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform">
+                    <div class="bg-blue-600 text-white p-6 text-center">
+                        <h3 class="text-2xl font-bold">系统维护</h3>
+                        <div class="mt-4 text-3xl font-bold">¥20 <span class="text-sm font-normal">/起</span></div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-2">
+                            <li class="mb-2">✔ 重装系统</li>
+                            <li class="mb-2">✔ 病毒清理</li>
+                            <li class="mb-2">✔ 系统优化</li>
+                            <li class="mb-2">✔ 驱动更新</li>
+                        </ul>
+                        <button id="openModal1" class="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">立即预约</button>
+                    </div>
+                </div>
+                <div class="bg-green-50 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform">
+                    <div class="bg-green-600 text-white p-6 text-center">
+                        <h3 class="text-2xl font-bold">编程服务</h3>
+                        <div class="mt-4 text-3xl font-bold">¥100 <span class="text-sm font-normal">/起</span></div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-2">
+                            <li class="mb-2">✔ 定制脚本</li>
+                            <li class="mb-2">✔ 网页开发</li>
+                            <li class="mb-2">✔ 程序调试</li>
+                            <li class="mb-2">✔ 代码优化</li>
+                        </ul>
+                        <button id="openModal2" class="mt-6 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">获取报价</button>
+                    </div>
+                </div>
+                <div class="bg-purple-50 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform">
+                    <div class="bg-purple-600 text-white p-6 text-center">
+                        <h3 class="text-2xl font-bold">咨询服务</h3>
+                        <div class="mt-4 text-3xl font-bold">¥25 <span class="text-sm font-normal">/起</span></div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-2">
+                            <li class="mb-2">✔ 技术咨询</li>
+                            <li class="mb-2">✔ 问题诊断</li>
+                            <li class="mb-2">✔ 解决方案</li>
+                            <li class="mb-2">✔ 远程指导</li>
+                        </ul>
+                        <button id="openModal3" class="mt-6 w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition">预约咨询</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <footer class="text-center text-gray-500 mt-12">
+            <p class="mt-2">&copy; 2024 IT小章. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- 对话框结构 -->
+    <div id="modalOverlay" class="modal-overlay"></div>
+    <div id="modal" class="modal">
+        <span id="modalClose" class="modal-close">&times;</span>
+        <h2 class="text-xl font-semibold mb-4">请注明来意，谢谢配合</h2>
+        <img src="https://49eee4f.webp.li/xiaozhang1609.png" alt="WeChat QR Code" class="w-full h-auto rounded-lg">
+    </div>
 
     <script>
-        const reviews = [
-        { date: '2024-05-18', location: '山东', user: 'dahefa', content: '很有技术的卖家，很耐心，下次有需要再来。' },
-        { date: '2024-05-17', location: '上海', user: '纸皓00', content: '解决问题了好评。' },
-        { date: '2024-05-17', location: '浙江', user: '小汤圆响叮当08', content: '解决问题速度很快，态度很好，好评！' },
-        { date: '2024-05-17', location: '四川', user: '冥月合时有', content: '服务很好！问题都解决了！不会的还视频教学！' },
-        { date: '2024-05-17', location: '海南', user: 'netzoo', content: '感谢。' },
-        { date: '2024-05-16', location: '宁夏', user: '阿深as', content: '很好！很耐心。' },
-        { date: '2024-05-15', location: '黑龙江', user: '蓝莓酱司康', content: '很强一小时解决问题态度也好。' },
-        { date: '2024-05-15', location: '广西', user: '三三。', content: '解决问题很快技术好。' },
-        { date: '2024-05-14', location: '安徽', user: '弘一法师', content: '老板热心负责，专业，修得很快，很有耐心。' },
-        { date: '2024-05-13', location: '黑龙江', user: '卖巧克腻啦', content: '电脑问题解决的很快，还帮我处理了后续的其他问题，感谢。' },
-        { date: '2024-05-12', location: '江苏', user: '我的饭呢', content: '小章老师真的很有耐心我的电脑说不出来的奇怪莫名其妙的但是他帮我解决了这个问题全程也没有不耐烦之类。' },
-        { date: '2024-05-12', location: '江西', user: 'XIANYU 白日梦专家吃货', content: '老师效率很高人很好，感谢！' },
-        { date: '2024-05-12', location: '河南', user: '低谷有雾', content: '非常有耐心，因为我的错误操作导致哥修理机器时很麻烦，也拖了一两天，但是哥非常有耐心地把所有问题都解决了，再次感谢。' },
-        { date: '2024-05-11', location: '马来西亚', user: '宇宙無敵帥神駿', content: '非常快速解决了我的问题，好评。' },
-        { date: '2024-05-10', location: '浙江', user: '平淡123123123', content: '第二次购买了，很好。' },
-        { date: '2024-05-08', location: '辽宁', user: 'vftgf', content: '服务耐心。下次还找你。' },
-        { date: '2024-05-08', location: '四川', user: '', content: '很耐心很专业完美解决了问题。' },
-        { date: '2024-05-07', location: '辽宁', user: '布后街简单的人参', content: '电脑出现了问题。很耐心的帮我诊断。最后重装修系统。安装驱动等都帮助解决了。谢谢。' },
-        { date: '2024-05-07', location: '北京', user: 't**3', content: '666。' },
-        { date: '2024-05-06', location: '湖北', user: '巾帼枫信儿', content: '巨棒。' },
-        { date: '2024-05-06', location: '浙江', user: 'cloudy', content: '专业，系统很快装好了！' },
-        { date: '2024-05-06', location: '广东', user: '', content: '修的很快。' },
-        { date: '2024-04-28', location: '上海', user: '海棠卡券', content: '很细心，也很有耐心的操作和指点，我不对电脑不懂，也给出了好的意见。' },
-        { date: '2024-04-22', location: '广东', user: '逍雨霁月', content: '该用户没有填写有效评价信息。' },
-        { date: '2024-04-20', location: '上海', user: '九寨沟精品', content: '很快。' },
-        { date: '2024-04-17', location: '江苏', user: '只想买买买的花柚', content: '服务体验非常好，几次找老板了，真的很便捷。' },
-        { date: '2024-04-17', location: '江西', user: '伟大的音乐盒', content: '熟练可靠，价格比某宝便宜。' },
-        { date: '2024-04-17', location: '北京', user: '', content: '非常快捷高效的处理！赞！' },
-        ];
-        
-        // 动态生成评价内容
-        const reviewContainer = document.getElementById('reviews-container');
-        reviews.slice(0, 9).forEach(review => {
-          const reviewElement = document.createElement('div');
-          reviewElement.className = 'bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl';
-          reviewElement.innerHTML = `
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                ${review.user ? review.user.charAt(0) : ''}
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg">${review.location} ${review.user}</h3>
-                <div class="flex items-center">
-                  ${[...Array(5)].map(() => `
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  `).join('')}
-                </div>
-              </div>
-            </div>
-            <p class="text-gray-600 mb-4">${review.content}</p>
-            <div class="text-sm text-gray-500 text-right">${review.date}</div>
-          `;
-          reviewContainer.appendChild(reviewElement);
+        // 获取所有按钮和对话框相关元素
+        const modal = document.getElementById('modal');
+        const modalOverlay = document.getElementById('modalOverlay');
+        const closeModalButton = document.getElementById('modalClose');
+
+        // 绑定打开对话框的按钮
+        const openModalButtons = document.querySelectorAll('#openModalButton, #openModal1, #openModal2, #openModal3');
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modal.style.display = 'block';
+                modalOverlay.style.display = 'block';
+            });
         });
-        </script>
+
+        // 关闭对话框
+        closeModalButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+            modalOverlay.style.display = 'none';
+        });
+
+        // 点击遮罩关闭对话框
+        modalOverlay.addEventListener('click', () => {
+            modal.style.display = 'none';
+            modalOverlay.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
