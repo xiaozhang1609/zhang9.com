@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT小章 - 技术服务专家</title>
+    <title>IT小章 - 专业电脑维修服务 | 系统维护 | 编程服务 | 技术咨询</title>
+    <meta name="description" content="小章提供专业的电脑维修、系统维护、编程服务和技术咨询。解决各种电脑问题，提供定制化解决方案。联系我们获取专业IT支持。">
+    <meta name="keywords" content="IT服务,电脑维修,系统维护,编程服务,技术咨询,深圳IT服务">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="https://49eee4f.webp.li/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://49eee4f.webp.li/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://www.itxiaozhang.com/">
+
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "IT小章",
+        "image": "https://49eee4f.webp.li/WALLE2.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "新昌路210号",
+            "addressLocality": "银川市",
+            "addressRegion": "宁夏省",
+            "postalCode": "750000",
+            "addressCountry": "CN"
+        },
+        "url": "https://fixpc.cc/",
+        "telephone": "微信：xiaozhang1609",
+        "priceRange": "20元起",
+        "openingHoursSpecification": [
+            {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+            }
+        ],
+        "description": "小章提供专业的电脑维修、系统维护、编程服务和技术咨询。解决各种电脑问题，提供定制化解决方案。",
+        "service": [
+            "电脑维修",
+            "系统维护",
+            "编程服务",
+            "技术咨询"
+        ],
+        "sameAs": "https://space.bilibili.com/3546607630944387"
+        }
+        </script>
+    
     <style>
         /* 对话框背景遮罩 */
         .modal-overlay {
@@ -58,22 +109,23 @@
 </head>
 <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-8 max-w-5xl">
-        <header class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-md p-8 mb-12">
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-md p-8 mb-12 text-center">
             <div class="md:w-1/3 flex justify-center md:justify-start mb-6 md:mb-0">
-                <div class="w-40 h-40 relative">
+                <div class="w-40 h-40 relative mx-auto">
                     <img src="https://49eee4f.webp.li/WALLE2.png" alt="IT小章头像" class="w-full h-full object-cover">
                 </div>
             </div>
             <div class="md:w-2/3 md:pl-8">
                 <h1 class="text-4xl font-bold text-gray-800 mb-4">IT小章</h1>
-                <p class="text-lg text-gray-600 mb-6">资深IT服务专家，专注于全面技术解决方案。</p>
+                <p class="text-lg text-gray-600 mb-6">全职电脑维修，全平台实名。</p>
                 <div class="space-y-4">
-                    <div class="flex items-center">
+                    <div class="flex justify-center">
                         <button id="openModalButton" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
                             🌎微信：xiaozhang1609
                         </button>
                     </div>
-                    <div class="flex items-center">
+                    <div class="flex justify-center">
                         <a href="mailto:xiaozhang.tech@hotmail.com" class="email-button">
                             📧邮箱：xiaozhang.tech@hotmail.com
                         </a>
@@ -82,52 +134,53 @@
             </div>
         </header>
         
+        <!-- 专业技能 -->
         <section class="bg-white rounded-lg shadow-md p-8 mb-12">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-green-200 pb-2">专业技能</h2>
+            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-green-200 pb-2 text-center">专业技能</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="space-y-4">
+                <div class="space-y-4 text-center">
                     <h3 class="text-xl font-semibold text-blue-600">系统维护</h3>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 mx-auto">
                         <li>重装操作系统</li>
                         <li>电脑黑屏问题</li>
                         <li>各种驱动问题</li>
                     </ul>
                 </div>
-                <div class="space-y-4">
+                <div class="space-y-4 text-center">
                     <h3 class="text-xl font-semibold text-green-600">编程服务</h3>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 mx-auto">
                         <li>定制脚本开发</li>
                         <li>定制网页设计</li>
                         <li>编程环境问题</li>
                     </ul>
                 </div>
-                <div class="space-y-4">
+                <div class="space-y-4 text-center">
                     <h3 class="text-xl font-semibold text-purple-600">咨询服务</h3>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 mx-auto">
                         <li>技术咨询支持</li>
                         <li>客户操作培训</li>
                         <li>各种疑难杂症</li>
                     </ul>
                 </div>
-                <div class="space-y-4">
+                <div class="space-y-4 text-center">
                     <h3 class="text-xl font-semibold text-yellow-600">批量处理</h3>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 mx-auto">
                         <li>重复操作自动化</li>
                         <li>批处理解决方案</li>
                         <li>批处理省心定制</li>
                     </ul>
                 </div>
-                <div class="space-y-4">
+                <div class="space-y-4 text-center">
                     <h3 class="text-xl font-semibold text-red-600">软件问题</h3>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 mx-auto">
                         <li>各种软件安装</li>
                         <li>各种软件卸载</li>
                         <li>各种软件问题</li>
                     </ul>
                 </div>
-                <div class="space-y-4">
+                <div class="space-y-4 text-center">
                     <h3 class="text-xl font-semibold text-indigo-600">更多服务</h3>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 mx-auto">
                         <li>更多定制服务</li>
                         <li>更多定制服务</li>
                         <li>更多定制服务</li>
@@ -136,61 +189,239 @@
             </div>
         </section>
 
+        <!-- 价格方案 -->
         <section class="bg-white rounded-lg shadow-md p-8 mb-12">
-            <h2 class="text-2xl font-semibold mb-8 text-gray-700 border-b-2 border-yellow-200 pb-2">价格方案</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-blue-50 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform">
-                    <div class="bg-blue-600 text-white p-6 text-center">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-blue-200 pb-2 text-center">价格方案</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 价格模块 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform text-center">
+                    <div class="bg-blue-600 text-white p-6">
                         <h3 class="text-2xl font-bold">系统维护</h3>
                         <div class="mt-4 text-3xl font-bold">¥20 <span class="text-sm font-normal">/起</span></div>
                     </div>
                     <div class="p-6">
-                        <ul class="space-y-2">
+                        <ul class="space-y-2 text-left mx-auto">
                             <li class="mb-2">✔ 重装系统</li>
                             <li class="mb-2">✔ 病毒清理</li>
                             <li class="mb-2">✔ 系统优化</li>
                             <li class="mb-2">✔ 驱动更新</li>
                         </ul>
-                        <button id="openModal1" class="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">立即预约</button>
+                        <button id="openModal1" class="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">立即咨询</button>
                     </div>
                 </div>
-                <div class="bg-green-50 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform">
-                    <div class="bg-green-600 text-white p-6 text-center">
+                <div class="bg-green-50 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform text-center">
+                    <div class="bg-green-600 text-white p-6">
                         <h3 class="text-2xl font-bold">编程服务</h3>
                         <div class="mt-4 text-3xl font-bold">¥100 <span class="text-sm font-normal">/起</span></div>
                     </div>
                     <div class="p-6">
-                        <ul class="space-y-2">
+                        <ul class="space-y-2 text-left mx-auto">
                             <li class="mb-2">✔ 定制脚本</li>
                             <li class="mb-2">✔ 网页开发</li>
                             <li class="mb-2">✔ 程序调试</li>
                             <li class="mb-2">✔ 代码优化</li>
                         </ul>
-                        <button id="openModal2" class="mt-6 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">获取报价</button>
+                        <button id="openModal2" class="mt-6 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">立即咨询</button>
                     </div>
                 </div>
-                <div class="bg-purple-50 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform">
-                    <div class="bg-purple-600 text-white p-6 text-center">
+                <div class="bg-purple-50 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform text-center">
+                    <div class="bg-purple-600 text-white p-6">
                         <h3 class="text-2xl font-bold">咨询服务</h3>
                         <div class="mt-4 text-3xl font-bold">¥25 <span class="text-sm font-normal">/起</span></div>
                     </div>
                     <div class="p-6">
-                        <ul class="space-y-2">
+                        <ul class="space-y-2 text-left mx-auto">
                             <li class="mb-2">✔ 技术咨询</li>
                             <li class="mb-2">✔ 问题诊断</li>
                             <li class="mb-2">✔ 解决方案</li>
                             <li class="mb-2">✔ 远程指导</li>
                         </ul>
-                        <button id="openModal3" class="mt-6 w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition">预约咨询</button>
+                        <button id="openModal3" class="mt-6 w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition">立即咨询</button>
                     </div>
                 </div>
             </div>
         </section>
-        
-        
-        
+
+
+        <!-- 客户评价 -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-red-200 pb-2 text-center">客户评价</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            D
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">山东 dahefa</h3>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">服务很好，问题都解决了，还提供了视频教学，好评！</p>
+                    <div class="text-sm text-gray-500 text-right">2024-05-18</div>
+                </div>
+                <!-- 你可以继续添加更多的评价 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            L
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">宁夏 流云</h3>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">非常有耐心，因为我的错误操作导致问题复杂，但还是耐心解决了。</p>
+                    <div class="text-sm text-gray-500 text-right">2024-05-18</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            J
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">大理 江流儿</h3>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">非常快速解决了我的问题，好评。</p>
+                    <div class="text-sm text-gray-500 text-right">2024-05-18</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            M
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">甘肃 马腾</h3>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">真正的专业人员，技术型人才，物美价廉，专业性强。</p>
+                    <div class="text-sm text-gray-500 text-right">2024-05-18</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            W
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg">大连 王羲之</h3>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">技术精湛，服务耐心，下次有需要还会再来。</p>
+                    <div class="text-sm text-gray-500 text-right">2024-05-18</div>
+                </div>
+
+<!-- 更多评价 -->
+<div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
+    <div class="flex items-center mb-4">
+        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+            🔍
+        </div>
+        <div>
+            <h3 class="font-semibold text-lg">查看更多评价</h3>
+        </div>
+    </div>
+    <a href="https://reviews.fixpc.cc/" target="_blank" class="text-blue-500 hover:underline">
+        查看更多最新评价
+    </a>
+    <div class="text-sm text-gray-500 text-right mt-4">2024-07-25</div>
+</div>
+
+
+
+        </section>
+
+        <!-- Footer -->
         <footer class="text-center text-gray-500 mt-12">
-            <p class="mt-2">&copy; 2024 IT小章. All rights reserved.</p>
+            <div class="mb-4">
+                <a href="https://gwang.top/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">官网查询</a>
+                <span class="mx-2">|</span>
+                <a href="https://itxiaozhang.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">我的博客</a>
+            </div>
+            <p>&copy; 2024 IT小章. All rights reserved.</p>
         </footer>
     </div>
 
