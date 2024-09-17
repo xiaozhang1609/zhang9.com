@@ -1,185 +1,197 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT小章 - 您的专业IT伙伴</title>
-    <link href="/output.css" rel="stylesheet">
+    <title>IT小章 - 专业IT服务</title>
+    <meta name="description" content="小章提供专业的电脑维修、系统维护、编程服务和技术咨询。解决各种电脑问题，提供定制化解决方案。">
+    <meta name="keywords" content="IT服务,电脑维修,系统维护,编程服务,技术咨询,深圳IT服务">
+    <link rel="stylesheet" href="/output.css">
     <style>
-        .bg-light-blue { background-color: #e6f3ff; }
-        .bg-light-green { background-color: #e6fff3; }
-        .bg-light-orange { background-color: #fff3e6; }
-        .bg-light-purple { background-color: #f3e6ff; }
+        /* 自定义样式 */
+        :root {
+            --primary: #3498db;
+            --secondary: #2ecc71;
+            --background: #ecf0f1;
+            --foreground: #34495e;
+            --accent: #e74c3c;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', 'Segoe UI', Tahoma, sans-serif;
+            background-color: var(--background);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
+
 <body class="bg-gray-100">
-    <header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-10">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <h1 class="text-3xl md:text-4xl font-bold">IT小章 - 您的专业IT伙伴</h1>
-            <img src="https://49eee4f.webp.li/xiaozhang1609.png" alt="WeChat QR Code" class="w-24 h-24 rounded-lg">
+
+    <!-- 头部 -->
+    <header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">IT小章 - 专业IT服务</h1>
+            <p class="text-lg md:text-xl">解决您的每一个IT难题</p>
+            <a href="#" id="openModalButton" class="cta-button mt-8">立即咨询</a>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-8 max-w-5xl">
-        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-            <div class="bg-light-blue p-4 rounded-lg text-center">
-                <h3 class="font-semibold mb-2">粉丝数量</h3>
+    <!-- 统计数据 -->
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-light-blue p-6 rounded-lg text-center shadow-md">
+                <h3 class="text-lg font-semibold mb-2">粉丝数量</h3>
                 <p id="fans" class="text-2xl font-bold">0</p>
             </div>
-            <div class="bg-light-green p-4 rounded-lg text-center">
-                <h3 class="font-semibold mb-2">好评数量</h3>
+            <div class="bg-light-green p-6 rounded-lg text-center shadow-md">
+                <h3 class="text-lg font-semibold mb-2">好评数量</h3>
                 <p id="reviews" class="text-2xl font-bold">0</p>
             </div>
-            <div class="bg-light-orange p-4 rounded-lg text-center">
-                <h3 class="font-semibold mb-2">答疑数量</h3>
+            <div class="bg-light-orange p-6 rounded-lg text-center shadow-md">
+                <h3 class="text-lg font-semibold mb-2">答疑数量</h3>
                 <p id="questions" class="text-2xl font-bold">0</p>
             </div>
-            <div class="bg-light-purple p-4 rounded-lg text-center">
-                <h3 class="font-semibold mb-2">发布教程</h3>
+            <div class="bg-light-purple p-6 rounded-lg text-center shadow-md">
+                <h3 class="text-lg font-semibold mb-2">发布教程</h3>
                 <p id="tutorials" class="text-2xl font-bold">0</p>
             </div>
-        </section>
-
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform">
-                <div class="bg-blue-600 text-white p-6">
-                    <h3 class="text-2xl font-bold">系统维护</h3>
-                    <p class="mt-4 text-3xl font-bold">¥20 <span class="text-sm font-normal">/起</span></p>
-                </div>
-                <ul class="p-6 space-y-2">
-                    <li>✔ 操作系统优化</li>
-                    <li>✔ 各种驱动更新</li>
-                    <li>✔ 软件安装支持</li>
-                    <li>✔ 软件卸载清理</li>
-                    <li>✔ 解决软件问题</li>
-                    <li>✔ 远程安装系统</li>
-                    <li>✔ 病毒查杀清理</li>
-                    <li>✔ 各种系统问题</li>
-                </ul>
-            </div>
-            <div class="bg-green-50 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform">
-                <div class="bg-green-600 text-white p-6">
-                    <h3 class="text-2xl font-bold">编程服务</h3>
-                    <p class="mt-4 text-3xl font-bold">¥100 <span class="text-sm font-normal">/起</span></p>
-                </div>
-                <ul class="p-6 space-y-2">
-                    <li>✔ 定制脚本开发</li>
-                    <li>✔ 网站设计开发</li>
-                    <li>✔ 程序调试修复</li>
-                    <li>✔ 代码优化整理</li>
-                    <li>✔ 自动化解决方案</li>
-                    <li>✔ 批处理解决方案</li>
-                    <li>✔ 批处理省心定制</li>
-                    <li>✔ 各种的编程问题</li>
-                </ul>
-            </div>
-            <div class="bg-purple-50 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform">
-                <div class="bg-purple-600 text-white p-6">
-                    <h3 class="text-2xl font-bold">咨询服务</h3>
-                    <p class="mt-4 text-3xl font-bold">¥25 <span class="text-sm font-normal">/起</span></p>
-                </div>
-                <ul class="p-6 space-y-2">
-                    <li>✔ 专业技术咨询</li>
-                    <li>✔ 远程问题诊断</li>
-                    <li>✔ 提供解决方案</li>
-                    <li>✔ 远程操作指导</li>
-                    <li>✔ 网站建设运维</li>
-                    <li>✔ 网络问题解答</li>
-                    <li>✔ 更多定制服务</li>
-                    <li>✔ 各种咨询服务</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="bg-white rounded-lg shadow-md p-8 mb-12">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-red-200 pb-2 text-center">客户评价</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">D</div>
-                        <div>
-                            <h3 class="font-semibold text-lg">山东 dahefa</h3>
-                            <div class="flex items-center">
-                                <!-- Star SVGs here -->
-                            </div>
-                        </div>
-                    </div>
-                    <p class="mb-4">服务很好，问题都解决了，还提供了视频教学，好评！</p>
-                    <p class="text-sm text-gray-500 text-right">2024-05-18</p>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">🔍</div>
-                        <h3 class="font-semibold text-lg">查看更多评价</h3>
-                    </div>
-                    <a href="https://reviews.fixpc.cc/" class="text-blue-500 hover:underline" target="_blank">查看更多最新评价</a>
-                    <p class="text-sm text-gray-500 text-right mt-4">2024-07-25</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-white rounded-lg shadow-md p-8 mb-12">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-red-200 pb-2 text-center">常见问题</h2>
-            <div class="space-y-4">
-                <div class="border-b pb-4">
-                    <button class="flex justify-between items-center w-full text-left font-semibold" onclick="toggleFAQ(this)">
-                        <span>如何联系IT小章？</span>
-                        <svg class="w-5 h-5 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                        </svg>
-                    </button>
-                    <p class="mt-2 hidden">您可以通过页面顶部的微信二维码添加IT小章的微信进行联系。</p>
-                </div>
-                <div class="border-b pb-4">
-                    <button class="flex justify-between items-center w-full text-left font-semibold" onclick="toggleFAQ(this)">
-                        <span>IT小章提供哪些服务？</span>
-                        <svg class="w-5 h-5 transform transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                        </svg>
-                    </button>
-                    <p class="mt-2 hidden">IT小章提供系统维护、编程服务和技术咨询等多种IT相关服务。具体服务内容可以参考页面上的服务卡片。</p>
-                </div>
-                <!-- 可以继续添加更多FAQ项 -->
-            </div>
-        </section>
-    </main>
-
-    <footer class="text-center py-4">
-        <div class="mb-4">
-            <a href="https://gwang.top/" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">官网查询</a>
-            <span class="mx-2">|</span>
-            <a href="https://itxiaozhang.com/" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">我的博客</a>
         </div>
-        <p>© 2024 IT小章. All rights reserved.</p>
+    </div>
+
+    <!-- 服务卡片 -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
+        <div class="bg-white shadow-lg p-6 rounded-lg text-center hover:scale-105 transition-transform">
+            <h3 class="text-xl font-semibold text-blue-500 mb-4">系统维护</h3>
+            <p class="text-3xl font-bold">¥20 起</p>
+            <ul class="text-left mt-4 space-y-2">
+                <li>✔ 操作系统优化</li>
+                <li>✔ 驱动更新</li>
+                <li>✔ 软件安装支持</li>
+                <li>✔ 软件卸载清理</li>
+            </ul>
+            <button class="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">立即咨询</button>
+        </div>
+        <div class="bg-white shadow-lg p-6 rounded-lg text-center hover:scale-105 transition-transform">
+            <h3 class="text-xl font-semibold text-green-500 mb-4">编程服务</h3>
+            <p class="text-3xl font-bold">¥100 起</p>
+            <ul class="text-left mt-4 space-y-2">
+                <li>✔ 脚本开发</li>
+                <li>✔ 网站设计</li>
+                <li>✔ 代码优化</li>
+                <li>✔ 自动化方案</li>
+            </ul>
+            <button class="mt-6 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">立即咨询</button>
+        </div>
+        <div class="bg-white shadow-lg p-6 rounded-lg text-center hover:scale-105 transition-transform">
+            <h3 class="text-xl font-semibold text-purple-500 mb-4">咨询服务</h3>
+            <p class="text-3xl font-bold">¥25 起</p>
+            <ul class="text-left mt-4 space-y-2">
+                <li>✔ 技术咨询</li>
+                <li>✔ 问题诊断</li>
+                <li>✔ 解决方案</li>
+                <li>✔ 网站维护</li>
+            </ul>
+            <button class="mt-6 w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition">立即咨询</button>
+        </div>
+    </section>
+
+    <!-- 客户评价 -->
+    <section class="container mx-auto py-12">
+        <h2 class="text-center text-3xl font-semibold mb-8">客户评价</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white shadow-lg p-6 rounded-lg">
+                <h3 class="font-semibold text-lg mb-2">山东 dahefa</h3>
+                <p class="text-gray-600 mb-4">服务很好，问题都解决了！</p>
+                <p class="text-gray-400 text-sm text-right">2024-05-18</p>
+            </div>
+            <div class="bg-white shadow-lg p-6 rounded-lg">
+                <h3 class="font-semibold text-lg mb-2">查看更多评价</h3>
+                <a href="https://reviews.fixpc.cc/" target="_blank" class="text-blue-500 hover:underline">查看更多</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="py-12">
+        <h2 class="text-center text-2xl font-semibold mb-6">常见问题</h2>
+        <div class="space-y-4">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold">如何联系IT小章？</h3>
+                <p class="mt-2 text-gray-600 hidden">通过顶部微信二维码联系。</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="font-semibold">提供哪些服务？</h3>
+                <p class="mt-2 text-gray-600 hidden">IT小章提供系统维护、编程服务、技术咨询等。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="text-center text-gray-500 py-8">
+        <div class="mb-4">
+            <a href="https://gwang.top/" class="text-blue-600 hover:underline">官网查询</a>
+            <span class="mx-2">|</span>
+            <a href="https://itxiaozhang.com/" class="text-blue-600 hover:underline">我的博客</a>
+        </div>
+        <p>&copy; 2024 IT小章. All rights reserved.</p>
     </footer>
 
+    <!-- 对话框 -->
+    <div id="modalOverlay" class="modal-overlay"></div>
+    <div id="modal" class="modal">
+        <span id="modalClose" class="modal-close">&times;</span>
+        <h2 class="text-xl font-semibold mb-4">请注明来意，谢谢配合</h2>
+        <img src="https://49eee4f.webp.li/xiaozhang1609.png" alt="WeChat QR Code" class="w-full h-auto rounded-lg">
+    </div>
+
     <script>
-        function animateValue(obj, start, end, duration) {
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                obj.innerHTML = Math.floor(progress * (end - start) + start);
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
+        // 动态计数器
+        function animateValue(id, start, end, duration) {
+            let obj = document.getElementById(id);
+            let range = end - start;
+            let minTimer = 50;
+            let stepTime = Math.abs(Math.floor(duration / range));
+            stepTime = Math.max(stepTime, minTimer);
+            let startTime = new Date().getTime();
+            let endTime = startTime + duration;
+            let timer;
+
+            function run() {
+                let now = new Date().getTime();
+                let remaining = Math.max((endTime - now) / duration, 0);
+                let value = Math.round(end - (remaining * range));
+                obj.innerHTML = value;
+                if (value == end) {
+                    clearInterval(timer);
                 }
-            };
-            window.requestAnimationFrame(step);
+            }
+
+            timer = setInterval(run, stepTime);
+            run();
         }
 
-        window.onload = function() {
-            animateValue(document.getElementById("fans"), 0, 1000, 2000);
-            animateValue(document.getElementById("reviews"), 0, 500, 2000);
-            animateValue(document.getElementById("questions"), 0, 2000, 2000);
-            animateValue(document.getElementById("tutorials"), 0, 100, 2000);
-        }
-
-        function toggleFAQ(element) {
-            const answer = element.nextElementSibling;
-            const icon = element.querySelector('svg');
-            answer.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
-        }
+        window.onload = function () {
+            animateValue("fans", 0, 1664, 2000);
+            animateValue("reviews", 0, 1747, 2000);
+            animateValue("questions", 0, 16889, 2000);
+            animateValue("tutorials", 0, 31, 2000);
+        };
     </script>
 </body>
+
 </html>
