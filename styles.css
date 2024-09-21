@@ -1,213 +1,212 @@
-        /* 对话框背景遮罩 */
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 30;
-        }
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --text-color: #333333;
+    --background-color: #f9f9f9;
+    --card-background: #ffffff;
+}
 
-        /* 对话框 */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 400px;
-            width: 100%;
-            z-index: 40;
-            text-align: center;
-            /* 确保文本居中显示 */
-        }
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+}
 
-        /* 关闭按钮 */
-        .modal-close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-        }
+.hero-body {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 4rem 1.5rem;
+}
 
-        /* 邮箱按钮样式 */
-        .email-button {
-            display: inline-block;
-            background-color: #2563eb;
-            /* Tailwind 的 bg-blue-600 */
-            color: #ffffff;
-            /* Tailwind 的 text-white */
-            padding: 0.5rem 1rem;
-            /* Tailwind 的 px-4 py-2 */
-            border-radius: 0.5rem;
-            /* Tailwind 的 rounded-lg */
-            text-decoration: none;
-            /* 去掉链接下划线 */
-            transition: background-color 0.3s ease;
-            /* 平滑的背景色变化过渡 */
-        }
+.profile-pic {
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
 
-        .email-button:hover {
-            background-color: #1d4ed8;
-            /* Tailwind 的 hover:bg-blue-700 */
-        }
+.qr-code {
+    border-radius: 12px;
+    border: 3px solid var(--accent-color);
+    width: 200px;
+    height: 200px;
+}
 
-        header {
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-            margin: 2rem auto;
-            max-width: 1200px;
-        }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
 
+.social-icon img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
 
-        .data-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
+.social-icon:hover img {
+    transform: scale(1.1);
+}
 
-        .data-item {
-            flex: 1 1 200px;
-            margin: 1rem;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.stats-section {
+    background-color: #f0f8ff;
+}
 
-        .data-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
+.stats-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
 
-        .data-title {
-            font-size: 1.2rem;
-            color: #333;
-            margin-bottom: 0.5rem;
-        }
+.stats-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
-        .data-value {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #4a90e2;
-        }
+.services-section {
+    background-color: #e6ffe6;
+}
 
-        .bg-light-blue {
-            background-color: #e3f2fd;
-        }
+.service-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--card-background);
+    border-radius: 8px;
+    overflow: hidden;
+}
 
-        .bg-light-green {
-            background-color: #e8f5e9;
-        }
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
-        .bg-light-orange {
-            background-color: #fff3e0;
-        }
+.service-card-header {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
 
-        .bg-light-purple {
-            background-color: #f3e5f5;
-        }
+.service-card-content {
+    flex-grow: 1;
+    padding: 1.5rem;
+}
 
-        /* styles.css 中添加以下内容 */
+.service-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-        #notice-banner {
-            position: fixed;
-            top: -100px;
-            left: 0;
-            right: 0;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-family: 'Arial', sans-serif;
-            font-size: 18px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            transition: top 0.5s ease;
-            z-index: 1000;
-        }
+.service-list li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        #notice-banner.show {
-            top: 0;
-        }
+.service-list li::before {
+    content: '✓';
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+}
 
-        #close-notice {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-        }
+.price-tag {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
 
-        #consult-button {
-            display: inline-block;
-            margin-left: 10px;
-            padding: 8px 15px;
-            background-color: #FFC107;
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
+.reviews-section {
+    background-color: #fff0f0;
+}
 
-        #consult-button:hover {
-            background-color: #FFD54F;
-        }
+.customer-review {
+    transition: transform 0.3s ease;
+    height: 100%;
+}
 
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
+.customer-review:hover {
+    transform: translateY(-5px);
+}
 
-            50% {
-                transform: scale(1.05);
-            }
+.faq-section {
+    background-color: #f0f0ff;
+}
 
-            100% {
-                transform: scale(1);
-            }
-        }
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    overflow: hidden;
+}
 
-        #consult-button {
-            animation: pulse 2s infinite;
-        }
+.faq-question {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        /* 为服务项目列表添加新的样式 */
-        .service-list {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
+.faq-question:hover {
+    background-color: #e8e8e8;
+}
 
-        .service-list li {
-            margin-bottom: 10px;
-        }
+.faq-toggle {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
 
-        /* 确保勾选标记和文本在同一行并居中对齐 */
-        .service-list li::before {
-            content: "✔ ";
-            color: #4CAF50;
-            /* 绿色勾选标记 */
-            margin-right: 5px;
-        }
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+}
 
-        /* 调整现有的 .p-6 类 */
-        .p-6 {
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.faq-answer {
+    padding: 1rem;
+    display: none;
+    background-color: var(--card-background);
+}
+
+.modal-content .box {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.modal-content .image img {
+    width: 100%;
+    height: auto;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-body {
+        padding: 3rem 1rem;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .qr-code {
+        width: 150px;
+        height: 150px;
+    }
+
+    .service-card {
+        margin-bottom: 1.5rem;
+    }
+}

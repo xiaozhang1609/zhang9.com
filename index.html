@@ -1,443 +1,386 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT小章 - 专业电脑维修服务 | 系统维护 | 编程服务 | 技术咨询</title>
-    <meta name="description" content="小章提供专业的电脑维修、系统维护、编程服务和技术咨询。解决各种电脑问题，提供定制化解决方案。联系我们获取专业IT支持。">
-    <meta name="keywords" content="IT服务,电脑维修,系统维护,编程服务,技术咨询,深圳IT服务">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="https://49eee4f.webp.li/fixpc_head2.png" type="image/x-icon">
-    <link rel="shortcut icon" href="https://49eee4f.webp.li/fixpc_head2.png" type="image/x-icon">
-    <link rel="canonical" href="https://www.itxiaozhang.com/">
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <meta name="description" content="IT小章提供专业的电脑维修、系统维护、编程服务和技术咨询。解决您的IT问题,提供定制化解决方案。">
+    <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
-
-    <!-- 结构化数据 -->
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "IT小章",
-        "image": "https://49eee4f.webp.li/fixpc_head2.png",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "新昌路210号",
-            "addressLocality": "银川市",
-            "addressRegion": "宁夏省",
-            "postalCode": "750000",
-            "addressCountry": "CN"
-        },
-        "url": "https://fixpc.cc/",
-        "telephone": "微信：xiaozhang1609",
-        "priceRange": "20元起",
-        "openingHoursSpecification": [
-            {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-            ],
-            "opens": "00:00",
-            "closes": "23:59"
-            }
-        ],
-        "description": "小章提供专业的电脑维修、系统维护、编程服务和技术咨询。解决各种电脑问题，提供定制化解决方案。",
-        "service": [
-            "电脑维修",
-            "系统维护",
-            "编程服务",
-            "技术咨询"
-        ],
-        "sameAs": "https://space.bilibili.com/3546607630944387"
-        }
-        </script>
-
 </head>
-
-<body class="bg-gray-100">
-
-    <!-- 你的弹出提醒HTML -->
-    <div id="notice-banner">
-        处理各种电脑问题
-        <a href="#" id="consult-button">立即咨询</a> <!-- 更改 consult-button -->
-        <button id="close-notice">&times;</button>
-    </div>
-    <div class="container mx-auto px-4 py-8 max-w-5xl">
-        <!-- Header -->
-        <header>
-            <!-- 下部分卡片 -->
-            <div class="data-container">
-                <div class="data-item bg-light-blue">
-                    <h3 class="data-title">粉丝数量</h3>
-                    <div class="data-value" id="fans">0</div>
-                </div>
-                <div class="data-item bg-light-green">
-                    <h3 class="data-title">好评数量</h3>
-                    <div class="data-value" id="reviews">0</div>
-                </div>
-                <div class="data-item bg-light-orange">
-                    <h3 class="data-title">答疑数量</h3>
-                    <div class="data-value" id="questions">0</div>
-                </div>
-                <div class="data-item bg-light-purple">
-                    <h3 class="data-title">发布教程</h3>
-                    <div class="data-value" id="tutorials">0</div>
-                </div>
-            </div>
-        </header>
-
-        <section class="bg-white rounded-lg shadow-md p-8 mb-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- 价格模块 -->
-                <div
-                    class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform text-center">
-                    <div class="bg-blue-600 text-white p-6">
-                        <h3 class="text-2xl font-bold">系统维护</h3>
-                        <div class="mt-4 text-3xl font-bold">¥20 <span class="text-sm font-normal">/起</span></div>
+<body>
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered is-gapless">
+                    <div class="column is-5">
+                        <div class="is-flex is-align-items-center">
+                            <img src="img/head.jpg" alt="IT小章头像" class="profile-pic mr-4">
+                            <div>
+                                <h1 class="title is-1 has-text-white">IT小章</h1>
+                                <h2 class="subtitle is-4 has-text-white">专业电脑维修 | 各类编程服务 | 各种问题咨询</h2>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <ul class="space-y-2 text-left mx-auto">
-                            <li class="mb-2">✔ 操作系统优化</li>
-                            <li class="mb-2">✔ 各种驱动更新</li>
-                            <li class="mb-2">✔ 软件安装支持</li>
-                            <li class="mb-2">✔ 软件卸载清理</li>
-                            <li class="mb-2">✔ 解决软件问题</li>
-                            <li class="mb-2">✔ 远程安装系统</li>
-                            <li class="mb-2">✔ 病毒查杀清理</li>
-                            <li class="mb-2">✔ 各种系统问题</li>
-                        </ul>
-                        <button id="openModal1"
-                            class="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">立即咨询</button>
-                    </div>
-                </div>
-                <div
-                    class="bg-green-50 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform text-center">
-                    <div class="bg-green-600 text-white p-6">
-                        <h3 class="text-2xl font-bold">编程服务</h3>
-                        <div class="mt-4 text-3xl font-bold">¥100 <span class="text-sm font-normal">/起</span></div>
-                    </div>
-                    <div class="p-6">
-                        <ul class="space-y-2 text-left mx-auto">
-                            <li class="mb-2">✔ 定制脚本开发</li>
-                            <li class="mb-2">✔ 网站设计开发</li>
-                            <li class="mb-2">✔ 程序调试修复</li>
-                            <li class="mb-2">✔ 代码优化整理</li>
-                            <li class="mb-2">✔ 自动化解决方案</li>
-                            <li class="mb-2">✔ 批处理解决方案</li>
-                            <li class="mb-2">✔ 批处理省心定制</li>
-                            <li class="mb-2">✔ 各种的编程问题</li>
-                        </ul>
-                        <button id="openModal2"
-                            class="mt-6 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">立即咨询</button>
-                    </div>
-                </div>
-                <div
-                    class="bg-purple-50 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform text-center">
-                    <div class="bg-purple-600 text-white p-6">
-                        <h3 class="text-2xl font-bold">咨询服务</h3>
-                        <div class="mt-4 text-3xl font-bold">¥25 <span class="text-sm font-normal">/起</span></div>
-                    </div>
-                    <div class="p-6">
-                        <ul class="space-y-2 text-left mx-auto">
-                            <li class="mb-2">✔ 专业技术咨询</li>
-                            <li class="mb-2">✔ 远程问题诊断</li>
-                            <li class="mb-2">✔ 提供解决方案</li>
-                            <li class="mb-2">✔ 远程操作指导</li>
-                            <li class="mb-2">✔ 网站建设运维</li>
-                            <li class="mb-2">✔ 网络问题解答</li>
-                            <li class="mb-2">✔ 更多定制服务</li>
-                            <li class="mb-2">✔ 各种咨询服务</li>
-                        </ul>
-                        <button id="openModal3"
-                            class="mt-6 w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition">立即咨询</button>
+                    <div class="column is-5 is-offset-2">
+                        <div class="has-text-centered">
+                            <img src="img/wechat.png" alt="微信二维码" class="qr-code mb-4">
+                            <div class="social-icons">
+                                <a class="social-icon" href="https://space.bilibili.com/3546607630944387" target="_blank" rel="noopener noreferrer" aria-label="哔哩哔哩">
+                                    <img src="img/bilibili.svg" alt="哔哩哔哩">
+                                </a>
+                                <a class="social-icon" href="https://www.ixigua.com/home/4312724246371000" target="_blank" rel="noopener noreferrer" aria-label="西瓜视频">
+                                    <img src="img/xiaguashiping.svg" alt="西瓜视频">
+                                </a>
+                                <a class="social-icon" href="https://www.xiaohongshu.com/user/profile/65acb5d8000000000d01f14d" target="_blank" rel="noopener noreferrer" aria-label="小红书">
+                                    <img src="img/xiaohongshu.svg" alt="小红书">
+                                </a>
+                                <a class="social-icon" href="https://v.douyin.com/irVNSHY6/" target="_blank" rel="noopener noreferrer" aria-label="抖音">
+                                    <img src="img/douyin.svg" alt="抖音">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 客户评价 -->
-        <section class="bg-white rounded-lg shadow-md p-8 mb-12">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-700 border-b-2 border-red-200 pb-2 text-center">客户评价</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                            D
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-lg">山东 dahefa</h3>
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
+    <section class="section stats-section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="box stats-box has-background-info-light has-text-centered">
+                        <h3 class="title is-4">粉丝数量</h3>
+                        <p class="title is-2" id="fans">0</p>
                     </div>
-                    <p class="text-gray-600 mb-4">服务很好，问题都解决了，还提供了视频教学，好评！</p>
-                    <div class="text-sm text-gray-500 text-right">2024-05-18</div>
                 </div>
-                <!-- 你可以继续添加更多的评价 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                            L
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-lg">宁夏 流云</h3>
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
+                <div class="column is-3">
+                    <div class="box stats-box has-background-success-light has-text-centered">
+                        <h3 class="title is-4">好评数量</h3>
+                        <p class="title is-2" id="reviews">0</p>
                     </div>
-                    <p class="text-gray-600 mb-4">非常有耐心，因为我的错误操作导致问题复杂，但还是耐心解决了。</p>
-                    <div class="text-sm text-gray-500 text-right">2024-05-18</div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                            J
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-lg">大理 江流儿</h3>
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
+                <div class="column is-3">
+                    <div class="box stats-box has-background-warning-light has-text-centered">
+                        <h3 class="title is-4">答疑数量</h3>
+                        <p class="title is-2" id="questions">0</p>
                     </div>
-                    <p class="text-gray-600 mb-4">非常快速解决了我的问题，好评。</p>
-                    <div class="text-sm text-gray-500 text-right">2024-05-18</div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                            M
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-lg">甘肃 马腾</h3>
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
+                <div class="column is-3">
+                    <div class="box stats-box has-background-danger-light has-text-centered">
+                        <h3 class="title is-4">发布教程</h3>
+                        <p class="title is-2" id="tutorials">0</p>
                     </div>
-                    <p class="text-gray-600 mb-4">真正的专业人员，技术型人才，物美价廉，专业性强。</p>
-                    <div class="text-sm text-gray-500 text-right">2024-05-18</div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                            W
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-lg">大连 王羲之</h3>
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">技术精湛，服务耐心，下次有需要还会再来。</p>
-                    <div class="text-sm text-gray-500 text-right">2024-05-18</div>
-                </div>
-
-                <!-- 更多评价 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 transition duration-300 hover:shadow-xl">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                            🔍
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-lg">查看更多评价</h3>
-                        </div>
-                    </div>
-                    <a href="https://reviews.fixpc.cc/" target="_blank" class="text-blue-500 hover:underline">
-                        查看更多最新评价
-                    </a>
-                    <div class="text-sm text-gray-500 text-right mt-4">2024-07-25</div>
-                </div>
-
-
-
-        </section>
-
-        <!-- Footer -->
-        <footer class="text-center text-gray-500 mt-12">
-            <div class="mb-4">
-                <a href="https://gwang.top/" target="_blank" rel="noopener noreferrer"
-                    class="text-blue-600 hover:underline">官网查询</a>
-                <span class="mx-2">|</span>
-                <a href="https://itxiaozhang.com/" target="_blank" rel="noopener noreferrer"
-                    class="text-blue-600 hover:underline">我的博客</a>
             </div>
+        </div>
+    </section>
+
+    <section class="section services-section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="service-card has-text-centered">
+                        <div class="service-card-header">
+                            <h3 class="title is-3 has-text-white">系统维护</h3>
+                            <span class="price-tag">¥20 起</span>
+                        </div>
+                        <div class="service-card-content">
+                            <ul class="service-list">
+                                <li><strong>操作系统优化</strong></li>
+                                <li><strong>各种驱动更新</strong></li>
+                                <li><strong>软件安装支持</strong></li>
+                                <li><strong>软件卸载清理</strong></li>
+                                <li><strong>解决软件问题</strong></li>
+                                <li><strong>远程安装系统</strong></li>
+                                <li><strong>病毒查杀清理</strong></li>
+                                <li><strong>各种系统问题</strong></li>
+                            </ul>
+                        </div>
+                        <button class="button is-primary is-fullwidth open-modal">立即咨询</button>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="service-card has-text-centered">
+                        <div class="service-card-header">
+                            <h3 class="title is-3 has-text-white">编程服务</h3>
+                            <span class="price-tag">¥100 起</span>
+                        </div>
+                        <div class="service-card-content">
+                            <ul class="service-list">
+                                <li><strong>定制脚本开发</strong></li>
+                                <li><strong>网站设计开发</strong></li>
+                                <li><strong>程序调试修复</strong></li>
+                                <li><strong>代码优化整理</strong></li>
+                                <li><strong>自动化解决方案</strong></li>
+                                <li><strong>批处理解决方案</strong></li>
+                                <li><strong>批处理省心定制</strong></li>
+                                <li><strong>各种的编程问题</strong></li>
+                            </ul>
+                        </div>
+                        <button class="button is-primary is-fullwidth open-modal">立即咨询</button>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="service-card has-text-centered">
+                        <div class="service-card-header">
+                            <h3 class="title is-3 has-text-white">咨询服务</h3>
+                            <span class="price-tag">¥25 起</span>
+                        </div>
+                        <div class="service-card-content">
+                            <ul class="service-list">
+                                <li><strong>专业技术咨询</strong></li>
+                                <li><strong>远程问题诊断</strong></li>
+                                <li><strong>提供解决方案</strong></li>
+                                <li><strong>远程操作指导</strong></li>
+                                <li><strong>网站建设运维</strong></li>
+                                <li><strong>网络问题解答</strong></li>
+                                <li><strong>更多定制服务</strong></li>
+                                <li><strong>各种咨询服务</strong></li>
+                            </ul>
+                        </div>
+                        <button class="button is-primary is-fullwidth open-modal">立即咨询</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section reviews-section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="card customer-review">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <div class="has-background-primary has-text-white is-flex is-justify-content-center is-align-items-center" style="width: 48px; height: 48px; border-radius: 50%;">
+                                            D
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">山东 dahefa</p>
+                                    <p class="subtitle is-6">★★★★★</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                服务很好，问题都解决了，还提供了视频教学，好评！
+                                <br>
+                                <time datetime="2024-05-18">2024-05-18</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card customer-review">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <div class="has-background-info has-text-white is-flex is-justify-content-center is-align-items-center" style="width: 48px; height: 48px; border-radius: 50%;">
+                                            L
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">宁夏 流云</p>
+                                    <p class="subtitle is-6">★★★★★</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                非常有耐心，因为我的错误操作导致问题复杂，但还是耐心解决了。
+                                <br>
+                                <time datetime="2024-05-18">2024-05-18</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card customer-review">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <div class="has-background-success has-text-white is-flex is-justify-content-center is-align-items-center" style="width: 48px; height: 48px; border-radius: 50%;">
+                                            J
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">云南 江流儿</p>
+                                    <p class="subtitle is-6">★★★★★</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                非常快速解决了我的问题，好评。
+                                <br>
+                                <time datetime="2024-05-18">2024-05-18</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card customer-review">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <div class="has-background-warning has-text-white is-flex is-justify-content-center is-align-items-center" style="width: 48px; height: 48px; border-radius: 50%;">
+                                            X
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">北京 小新</p>
+                                    <p class="subtitle is-6">★★★★★</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                IT小章的服务真的很专业，解决了我困扰已久的系统问题，非常感谢！
+                                <br>
+                                <time datetime="2024-05-19">2024-05-19</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card customer-review">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <div class="has-background-danger has-text-white is-flex is-justify-content-center is-align-items-center" style="width: 48px; height: 48px; border-radius: 50%;">
+                                            M
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">广东 明月</p>
+                                    <p class="subtitle is-6">★★★★★</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                定制的脚本完美解决了我的工作需求，效率提高了不少，谢谢IT小章！
+                                <br>
+                                <time datetime="2024-05-20">2024-05-20</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card customer-review">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <div class="has-background-link has-text-white is-flex is-justify-content-center is-align-items-center" style="width: 48px; height: 48px; border-radius: 50%;">
+                                            H
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">上海 海风</p>
+                                    <p class="subtitle is-6">★★★★★</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                咨询服务非常到位，IT小章给出的建议帮我避免了很多潜在问题，值得信赖！
+                                <br>
+                                <time datetime="2024-05-21">2024-05-21</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section faq-section">
+        <div class="container">
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0">
+                        <strong>如何联系IT小章获取服务？</strong>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>您可以通过点击网页上的"立即咨询"按钮，或者通过官方网站的联系表单、客服邮箱、微信公众号等方式联系我们。我们会尽快回复您的咨询。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0">
+                        <strong>IT小章的服务范围包括哪些？</strong>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们的服务范围包括系统维护（如操作系统优化、驱动更新）、编程服务（如定制脚本开发、网站设计）、技术咨询（如远程问题诊断、解决方案提供）等多个方面的IT服务。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0">
+                        <strong>IT小章的服务收费标准是怎样的？</strong>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们的收费标准因服务类型而异：系统维护起价¥20，编程服务起价¥100，技术咨询起价¥25。具体价格会根据问题复杂度、项目规模等因素调整，并在服务开始前与客户确认。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0">
+                        <strong>IT小章能提供上门服务吗？</strong>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们主要提供远程服务，但在特殊情况下也可以安排上门服务（仅限深圳地区）。上门服务需要提前预约，并可能收取额外的交通和时间成本。我们建议先尝试远程服务，如无法解决再考虑上门。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0">
+                        <strong>如何保证我的数据安全？</strong>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们高度重视客户数据安全。所有远程操作都需要客户授权，我们不会在未经允许的情况下访问或复制客户数据。我们使用加密通信确保数据传输安全，并定期进行安全培训。此外，我们会与客户签署保密协议，严格保护客户隐私。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://gwang.top/">官网查询</a> | 
+                <a href="https://itxiaozhang.com/">我的博客</a>
+            </p>
             <p>&copy; 2024 IT小章. All rights reserved.</p>
-        </footer>
+        </div>
+    </footer>
+
+    <div class="modal" id="contactModal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box has-text-centered">
+                <h2 class="title is-4">请注明来意，谢谢配合</h2>
+                <figure class="image">
+                    <img src="img/wechat.png" alt="联系二维码">
+                </figure>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
     </div>
 
-    <!-- 对话框结构 -->
-    <div id="modalOverlay" class="modal-overlay"></div>
-    <div id="modal" class="modal">
-        <span id="modalClose" class="modal-close">&times;</span>
-        <h2 class="text-xl font-semibold mb-4">请注明来意，谢谢配合</h2>
-        <img src="https://49eee4f.webp.li/xiaozhang1609.png" alt="WeChat QR Code" class="w-full h-auto rounded-lg">
-    </div>
+    <button id="backToTop" class="button is-primary is-rounded" aria-label="返回顶部">
+        <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </span>
+    </button>
 
-    <script src="scripts.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
