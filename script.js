@@ -52,9 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 const id = entry.target.id;
                 const values = {
-                    fans: 1664,
+                    fans: 3664,
                     reviews: 1747,
-                    questions: 16889,
+                    questions: 17889,
                     tutorials: 31
                 };
                 animateValue(id, 0, values[id], 2000);
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
+        if (window.scrollY > 300) {
             backToTopButton.style.display = 'block';
         } else {
             backToTopButton.style.display = 'none';

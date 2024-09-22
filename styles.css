@@ -13,40 +13,26 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-.hero-body {
+.hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    padding: 4rem 1.5rem;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    border: 3px solid var(--primary-color);
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
+.hero-body {
+    padding: 3rem 1.5rem;
 }
 
-.qr-code {
-    border-radius: 12px;
-    border: 3px solid var(--accent-color);
-    width: 200px;
-    height: 200px;
+.hero .title,
+.hero .subtitle {
+    color: #ffffff;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.social-icon img {
-    width: 32px;
-    height: 32px;
+.hero .button {
+    margin: 0.5rem;
     transition: transform 0.3s ease;
 }
 
-.social-icon:hover img {
-    transform: scale(1.1);
+.hero .button:hover {
+    transform: scale(1.05);
 }
 
 .stats-section {
@@ -193,17 +179,23 @@ body {
 
 @media screen and (max-width: 768px) {
     .hero-body {
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
     }
 
-    .profile-pic {
-        width: 100px;
-        height: 100px;
+    .hero .title {
+        font-size: 2rem;
     }
 
-    .qr-code {
-        width: 150px;
-        height: 150px;
+    .hero .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero .buttons {
+        flex-wrap: wrap;
+    }
+
+    .hero .button {
+        margin: 0.25rem;
     }
 
     .service-card {
