@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT小章 - 专业电脑维修服务 | 系统维护 | 编程服务 | 技术咨询</title>
     <meta name="description" content="IT小章提供专业的电脑维修、系统维护、编程服务和技术咨询。解决您的IT问题,提供定制化解决方案。">
-    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "IT小章",
+      "description": "专业电脑维修、系统维护、编程服务和技术咨询",
+      "url": "https://itxiaozhang.com/",
+      "image": "img/head.jpg",
+      "telephone": "+86-XXX-XXXX-XXXX",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "您的城市",
+        "addressRegion": "您的省份",
+        "addressCountry": "CN"
+      },
+      "priceRange": "¥¥"
+    }
+    </script>
 </head>
+
 <body>
-    <section class="hero is-fullheight">
+    <section class="hero">
         <div class="hero-body">
             <div class="container">
                 <div class="columns is-vcentered">
-                    <div class="column is-two-thirds">
-                        <figure class="image is-128x128 mb-4 mx-auto">
-                            <img src="img/head.jpg" alt="IT小章头像" class="is-rounded">
-                        </figure>
-                        <h1 class="title is-1 has-text-centered">IT小章</h1>
-                        <h2 class="subtitle is-3 has-text-centered">专业电脑维修 | 各类编程服务 | 各种问题咨询</h2>
-                        <div class="buttons is-centered mt-5">
-                            <a href="https://space.bilibili.com/3546607630944387" class="button is-primary is-rounded">哔哩哔哩</a>
-                            <a href="https://www.xiaohongshu.com/user/profile/65acb5d8000000000d01f14d" class="button is-danger is-rounded">小红书</a>
-                            <a href="https://www.ixigua.com/home/4312724246371000" class="button is-warning is-rounded">西瓜视频</a>
-                            <a href="https://v.douyin.com/irVNSHY6/" class="button is-info is-rounded">抖音</a>
+                    <div class="column is-three-quarters">
+                        <div class="is-flex is-align-items-center">
+                            <figure class="image is-128x128 mr-5">
+                                <img src="img/head.jpg" alt="IT小章头像" class="is-rounded" width="128" height="128">
+                            </figure>
+                            <div>
+                                <h1 class="title is-1">IT小章</h1>
+                                <h2 class="subtitle is-3">专业电脑维修 | 各类编程服务 | 各种问题咨询</h2>
+                                <div class="buttons mt-4">
+                                    <a href="https://space.bilibili.com/3546607630944387" class="button is-primary is-rounded" target="_blank" rel="noopener noreferrer">哔哩哔哩</a>
+                                    <a href="https://www.xiaohongshu.com/user/profile/65acb5d8000000000d01f14d" class="button is-danger is-rounded" target="_blank" rel="noopener noreferrer">小红书</a>
+                                    <a href="https://www.ixigua.com/home/4312724246371000" class="button is-warning is-rounded" target="_blank" rel="noopener noreferrer">西瓜视频</a>
+                                    <a href="https://v.douyin.com/irVNSHY6/" class="button is-info is-rounded" target="_blank" rel="noopener noreferrer">抖音</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column is-one-quarter">
                         <figure class="image is-square">
-                            <img src="img/wechat.png" alt="微信二维码">
+                            <img src="img/wechat.png" alt="微信二维码" loading="lazy" width="200" height="200">
                         </figure>
-                        <p class="has-text-centered mt-3">扫码添加微信</p>
+                        <p class="has-text-centered mt-3 has-text-white">扫码添加微信</p>
                     </div>
                 </div>
             </div>
@@ -89,7 +113,7 @@
                                 <li><strong>各种系统问题</strong></li>
                             </ul>
                         </div>
-                        <button class="button is-primary is-fullwidth open-modal">立即咨询</button>
+                        <button class="button is-primary is-fullwidth open-modal" aria-haspopup="true">立即咨询</button>
                     </div>
                 </div>
                 <div class="column is-4">
@@ -110,7 +134,7 @@
                                 <li><strong>各种的编程问题</strong></li>
                             </ul>
                         </div>
-                        <button class="button is-primary is-fullwidth open-modal">立即咨询</button>
+                        <button class="button is-primary is-fullwidth open-modal" aria-haspopup="true">立即咨询</button>
                     </div>
                 </div>
                 <div class="column is-4">
@@ -131,7 +155,7 @@
                                 <li><strong>各种咨询服务</strong></li>
                             </ul>
                         </div>
-                        <button class="button is-primary is-fullwidth open-modal">立即咨询</button>
+                        <button class="button is-primary is-fullwidth open-modal" aria-haspopup="true">立即咨询</button>
                     </div>
                 </div>
             </div>
@@ -140,151 +164,8 @@
 
     <section class="section reviews-section">
         <div class="container">
-            <div class="columns is-multiline">
-                <div class="column is-4">
-                    <div class="card customer-review">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <div class="has-background-primary has-text-white is-flex is-justify-content-center is-align-items-center" style="width: 48px; height: 48px; border-radius: 50%;">
-                                            D
-                                        </div>
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">山东 dahefa</p>
-                                    <p class="subtitle is-6">★★★★★</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                服务很好，问题都解决了，还提供了视频教学，好评！
-                                <br>
-                                <time datetime="2024-05-18">2024-05-18</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="card customer-review">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <div class="has-background-info has-text-white is-flex is-justify-content-center is-align-items-center" style="width: 48px; height: 48px; border-radius: 50%;">
-                                            L
-                                        </div>
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">宁夏 流云</p>
-                                    <p class="subtitle is-6">★★★★★</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                非常有耐心，因为我的错误操作导致问题复杂，但还是耐心解决了。
-                                <br>
-                                <time datetime="2024-05-18">2024-05-18</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="card customer-review">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <div class="has-background-success has-text-white is-flex is-justify-content-center is-align-items-center" style="width: 48px; height: 48px; border-radius: 50%;">
-                                            J
-                                        </div>
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">云南 江流儿</p>
-                                    <p class="subtitle is-6">★★★★★</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                非常快速解决了我的问题，好评。
-                                <br>
-                                <time datetime="2024-05-18">2024-05-18</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="card customer-review">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <div class="has-background-warning has-text-white is-flex is-justify-content-center is-align-items-center" style="width: 48px; height: 48px; border-radius: 50%;">
-                                            X
-                                        </div>
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">北京 小新</p>
-                                    <p class="subtitle is-6">★★★★★</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                IT小章的服务真的很专业，解决了我困扰已久的系统问题，非常感谢！
-                                <br>
-                                <time datetime="2024-05-19">2024-05-19</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="card customer-review">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <div class="has-background-danger has-text-white is-flex is-justify-content-center is-align-items-center" style="width: 48px; height: 48px; border-radius: 50%;">
-                                            M
-                                        </div>
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">广东 明月</p>
-                                    <p class="subtitle is-6">★★★★★</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                定制的脚本完美解决了我的工作需求，效率提高了不少，谢谢IT小章！
-                                <br>
-                                <time datetime="2024-05-20">2024-05-20</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-4">
-                    <div class="card customer-review">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <div class="has-background-link has-text-white is-flex is-justify-content-center is-align-items-center" style="width: 48px; height: 48px; border-radius: 50%;">
-                                            H
-                                        </div>
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">上海 海风</p>
-                                    <p class="subtitle is-6">★★★★★</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                咨询服务非常到位，IT小章给出的建议帮我避免了很多潜在问题，值得信赖！
-                                <br>
-                                <time datetime="2024-05-21">2024-05-21</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="columns is-multiline" id="reviewsContainer">
+                <!-- 评论将通过JavaScript动态生成 -->
             </div>
         </div>
     </section>
@@ -344,10 +225,10 @@
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
-                <a href="https://gwang.top/">官网查询</a> | 
+                <a href="https://gwang.top/">官网查询</a> |
                 <a href="https://itxiaozhang.com/">我的博客</a>
             </p>
-            <p>&copy; 2024 IT小章. All rights reserved.</p>
+            <p>&copy; <span id="currentYear"></span> IT小章. All rights reserved.</p>
         </div>
     </footer>
 
@@ -357,7 +238,7 @@
             <div class="box has-text-centered">
                 <h2 class="title is-4">请注明来意，谢谢配合</h2>
                 <figure class="image">
-                    <img src="img/wechat.png" alt="联系二维码">
+                    <img src="img/wechat.png" alt="联系二维码" loading="lazy" width="200" height="200">
                 </figure>
             </div>
         </div>
@@ -366,7 +247,8 @@
 
     <button id="backToTop" class="button is-primary is-rounded" aria-label="返回顶部">
         <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="18 15 12 9 6 15"></polyline>
             </svg>
         </span>
@@ -374,4 +256,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

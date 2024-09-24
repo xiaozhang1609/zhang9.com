@@ -15,10 +15,11 @@ body {
 
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 2rem 0;
 }
 
 .hero-body {
-    padding: 3rem 1.5rem;
+    padding: 1rem 1.5rem;
 }
 
 .hero .title,
@@ -46,7 +47,7 @@ body {
 
 .stats-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .services-section {
@@ -65,7 +66,7 @@ body {
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .service-card-header {
