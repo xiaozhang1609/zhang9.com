@@ -1,0 +1,456 @@
+{
+  "推荐软件": [
+    {
+      "id": "r1",
+      "name": "VLC",
+      "description": "开源多媒体播放器",
+      "link": "https://www.videolan.org/vlc/",
+      "alias": ["VLC", "VLC Player", "VLC Media Player"],
+      "textTutorial": "https://itxiaozhang.com/vlc-best-video-player/",
+      "videoTutorial": "https://www.bilibili.com/video/BV1yz421R7dM"
+    },
+    {
+      "id": "r2",
+      "name": "OBS Studio",
+      "description": "直播与屏幕录制软件",
+      "link": "https://obsproject.com/",
+      "alias": ["OBS Studio", "OBS", "Open Broadcaster Software"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "r3",
+      "name": "7-Zip",
+      "description": "文件压缩与解压工具",
+      "link": "http://www.7-zip.org/",
+      "alias": ["7-Zip", "7zip", "7z"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "r4",
+      "name": "KeePassXC",
+      "description": "密码管理器",
+      "link": "https://keepassxc.org/",
+      "alias": ["KeePassXC", "KeePass X", "KeePass Cross-Platform Community Edition"],
+      "textTutorial": null,
+      "videoTutorial": "https://www.bilibili.com/video/BV1fZmBYeEy5"
+    },
+    {
+      "id": "r5",
+      "name": "LocalSend",
+      "description": "局域网文件传输工具",
+      "link": "https://localsend.org/",
+      "alias": ["LocalSend", "Local Send"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "r6",
+      "name": "Motrix",
+      "description": "全能下载工具",
+      "link": "https://motrix.app/",
+      "alias": ["Motrix", "Motrix Downloader"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "r7",
+      "name": "Thunderbird",
+      "description": "电子邮件客户端",
+      "link": "https://www.thunderbird.net/",
+      "alias": ["Thunderbird", "Mozilla Thunderbird", "Thunderbird Mail"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "r8",
+      "name": "Firefox",
+      "description": "开源浏览器",
+      "link": "https://www.mozilla.org/firefox/",
+      "alias": ["Firefox", "Mozilla Firefox"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "r9",
+      "name": "Shotcut",
+      "description": "开源视频编辑软件",
+      "link": "https://shotcut.org/",
+      "alias": ["Shotcut", "Shotcut Editor"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "r10",
+      "name": "Joplin",
+      "description": "开源笔记软件",
+      "link": "https://joplinapp.org/",
+      "alias": ["Joplin", "Joplin Notes"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "r11",
+      "name": "Bitwarden",
+      "description": "密码管理器",
+      "link": "https://bitwarden.com/download/",
+      "alias": ["Bitwarden", "Bitwarden Password Manager"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "r12",
+      "name": "Follow",
+      "description": "待办事项与时间管理工具",
+      "link": "https://follow.is/",
+      "alias": ["Follow", "Follow To-Do"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "r13",
+      "name": "PixPin",
+      "description": "图像标注与管理工具",
+      "link": "https://pixpinapp.com/",
+      "alias": ["PixPin", "Pix Pin"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "r14",
+      "name": "Notepad++",
+      "description": "代码编辑器",
+      "link": "https://notepad-plus-plus.org/downloads",
+      "alias": ["Notepad++", "Notepad Plus Plus"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "r15",
+      "name": "ReNamer",
+      "description": "批量重命名工具",
+      "link": "https://www.den4b.com/products/renamer",
+      "alias": ["ReNamer", "Re Namer"],
+      "textTutorial": null,
+      "videoTutorial": null
+    }
+  ],
+  "常用软件": [
+    {
+      "id": "c1",
+      "name": "WPS",
+      "description": "办公文档处理工具",
+      "link": "https://www.wps.cn/",
+      "alias": ["WPS", "WPS Office"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c2",
+      "name": "腾讯会议",
+      "description": "在线视频会议软件",
+      "link": "https://meeting.tencent.com/",
+      "alias": ["Tencent Meeting", "tengxunhuiyi", "Tencent Conference", "TX Meeting"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c3",
+      "name": "钉钉",
+      "description": "企业级沟通与协作平台",
+      "link": "https://www.dingtalk.com/",
+      "alias": ["DingTalk", "dingtalk", "Ding Ding"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c4",
+      "name": "爱奇艺",
+      "description": "综合性视频服务平台",
+      "link": "https://www.iqiyi.com/",
+      "alias": ["iQIYI", "aiqiyi", "iQiyi Video"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c5",
+      "name": "腾讯视频",
+      "description": "腾讯视频网站",
+      "link": "https://v.qq.com/",
+      "alias": ["Tencent Video", "tengxunshipin", "QQ Video"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c6",
+      "name": "优酷",
+      "description": "视频分享网站",
+      "link": "https://www.youku.com/",
+      "alias": ["Youku", "youku", "Youku Video"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c7",
+      "name": "哔哩哔哩",
+      "description": "视频分享社区",
+      "link": "https://www.bilibili.com/",
+      "alias": ["Bilibili", "bilibili", "B站"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c8",
+      "name": "网易云音乐",
+      "description": "在线音乐流媒体服务",
+      "link": "https://music.163.com/",
+      "alias": ["NetEase Cloud Music", "wangyiyunyinyue", "NCM"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c9",
+      "name": "MuMu模拟器",
+      "description": "运行Android应用的模拟器",
+      "link": "https://mumu.163.com/",
+      "alias": ["MuMu Emulator", "mumu moniqi", "Netease MuMu"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c10",
+      "name": "WeGame",
+      "description": "腾讯游戏平台",
+      "link": "https://www.wegame.com.cn/home/",
+      "alias": ["WeGame", "Tencent WeGame"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c11",
+      "name": "Steam",
+      "description": "PC游戏分发平台",
+      "link": "https://store.steampowered.com/",
+      "alias": ["Steam", "Steam Platform"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c12",
+      "name": "微信",
+      "description": "即时通讯与支付工具",
+      "link": "https://weixin.qq.com/",
+      "alias": ["WeChat", "weixin", "WX"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c13",
+      "name": "QQ",
+      "description": "即时通讯工具",
+      "link": "https://im.qq.com/",
+      "alias": ["QQ", "Tencent QQ", "QQ Messenger"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c14",
+      "name": "抖音",
+      "description": "短视频分享平台",
+      "link": "https://www.douyin.com/",
+      "alias": ["Douyin", "douyin", "TikTok China"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c15",
+      "name": "迅雷",
+      "description": "文件下载加速工具",
+      "link": "https://www.xunlei.com/",
+      "alias": ["Xunlei", "xunlei", "Thunder"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c16",
+      "name": "百度网盘",
+      "description": "个人云存储服务",
+      "link": "https://pan.baidu.com/",
+      "alias": ["Baidu Netdisk", "baiduwangpan", "Baidu Cloud"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c17",
+      "name": "阿里云盘",
+      "description": "阿里巴巴云存储服务",
+      "link": "https://www.alipan.com/",
+      "alias": ["Aliyun Pan", "aliyunpan", "Alibaba Cloud Disk"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c18",
+      "name": "Brave",
+      "description": "安全隐私浏览器",
+      "link": "https://brave.com/",
+      "alias": ["Brave", "Brave Browser"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c19",
+      "name": "Edge",
+      "description": "微软网页浏览器",
+      "link": "https://www.microsoft.com/zh-cn/edge/download",
+      "alias": ["Edge", "Microsoft Edge"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c20",
+      "name": "谷歌浏览器",
+      "description": "Google Chrome 浏览器",
+      "link": "https://www.google.cn/chrome/",
+      "alias": ["Google Chrome", "gugeliulanqi", "Chrome Browser"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c21",
+      "name": "剪映",
+      "description": "免费视频编辑工具",
+      "link": "https://www.capcut.cn/",
+      "alias": ["Jianying", "jianying", "CapCut China"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c22",
+      "name": "向日葵",
+      "description": "远程控制软件",
+      "link": "https://sunlogin.oray.com/download",
+      "alias": ["Sunlogin", "xiangrikui", "Sunflower Remote"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c23",
+      "name": "ToDesk",
+      "description": "远程桌面控制工具",
+      "link": "https://www.todesk.com/",
+      "alias": ["ToDesk", "To Desk Remote"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c24",
+      "name": "IObit Unlocker",
+      "description": "文件解锁工具",
+      "link": "https://www.iobit.com/en/iobit-unlocker.php",
+      "alias": ["IObit Unlocker", "IObit File Unlocker"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c25",
+      "name": "geek",
+      "description": "软件卸载工具",
+      "link": "https://www.geekuninstaller.com/",
+      "alias": ["Geek Uninstaller", "geek", "Geek Software Remover"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c26",
+      "name": "通义千问",
+      "description": "通义千问大模型",
+      "link": "https://tongyi.aliyun.com/",
+      "alias": ["通义千问", "tongyi", "Tongyi Qianwen"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c27",
+      "name": "Kimi",
+      "description": "Kimi大模型",
+      "link": "https://kimi.moonshot.cn/",
+      "alias": ["Kimi", "kimi", "Kimi AI"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c28",
+      "name": "智谱清言",
+      "description": "ChatGLM大模型",
+      "link": "https://chatglm.cn/",
+      "alias": ["ChatGLM", "chatglm", "ChatGLM AI"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c29",
+      "name": "ChatGPT",
+      "description": "OpenAI开发的智能助手",
+      "link": "https://chatgpt.com/",
+      "alias": ["ChatGPT", "chatgpt", "OpenAI ChatGPT"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c30",
+      "name": "z-library",
+      "description": "电子书下载网站",
+      "link": "https://z-library.sk/",
+      "alias": ["z-library", "电子书下载", "zlibrary", "电子书"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c30",
+      "name": "秘塔AI搜索",
+      "description": "AI搜索工具",
+      "link": "https://metaso.cn/",
+      "alias": ["秘塔AI搜索", "metaso", "Metaso AI Search", "秘塔"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c31",
+      "name": "IT小章",
+      "description": "我的博客",
+      "link": "https://itxiaozhang.com/",
+      "alias": ["IT小章", "itxiaozhang", "小章"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c32",
+      "name": "123云盘",
+      "description": "123云盘",
+      "link": "https://www.123pan.com/",
+      "alias": ["123云盘", "123pan", "123 Cloud Disk", "123"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c33",
+      "name": "Office Tools Plus",
+      "description": "Office Tools Plus",
+      "link": "https://otp.landian.vip/zh-cn/",
+      "alias": ["Office Tools Plus", "office tools plus", "Office Tools", "Office"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c34",
+      "name": "我的订阅",
+      "description": "我的订阅",
+      "link": "https://sub.itxiaozhang.com/",
+      "alias": ["我的订阅", "sub", "订阅"],
+      "textTutorial": null,
+      "videoTutorial": null
+    }
+  ]
+}
