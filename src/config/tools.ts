@@ -109,7 +109,7 @@ export const toolsConfig: ToolConfig[] = [
     id: 'pureBackground',
     icon: Palette,
     name: 'pureBackground',
-    category: 'images',
+    category: 'common',
     description: 'pureBackgroundDesc',
     component: lazy(() => import('../components/tools/PureBackground'))
   },

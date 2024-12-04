@@ -437,18 +437,27 @@
     {
       "id": "c33",
       "name": "Office Tools Plus",
-      "description": "Office Tools Plus",
+      "description": "Office Tool Plus 是一款Office 小工具，可以帮助您部署 Office",
       "link": "https://otp.landian.vip/zh-cn/",
       "alias": ["Office Tools Plus", "office tools plus", "Office Tools", "Office"],
-      "textTutorial": null,
-      "videoTutorial": null
-    },
+      "textTutorial": "https://itxiaozhang.com/office-tool-plus-install-activate-fast",
+      "videoTutorial": "https://itxiaozhang.com/office-tool-plus-install-activate-fast"
+      },
     {
       "id": "c34",
       "name": "我的订阅",
       "description": "我的订阅",
       "link": "https://sub.itxiaozhang.com/",
       "alias": ["我的订阅", "sub", "订阅"],
+      "textTutorial": null,
+      "videoTutorial": null
+    },
+    {
+      "id": "c36",
+      "name": "KMS",
+      "description": "KMS",
+      "link": "https://www.coolhub.top/tech-articles/kms_list.html",
+      "alias": ["KMS", "kms", "KMS激活"],
       "textTutorial": null,
       "videoTutorial": null
     }
