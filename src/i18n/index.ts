@@ -196,7 +196,7 @@ const resources = {
       newYearCountdown: '新年倒计时',
       pomodoro: '番茄计时器',
       basicTimer: '基础计时器',
-      switchLang: '���换语言',
+      switchLang: '切换语言',
       toggleTheme: '切换主题',
       toggleMenu: '切换菜单',
       darkMode: '深色模式',
