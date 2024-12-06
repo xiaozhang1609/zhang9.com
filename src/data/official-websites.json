@@ -460,6 +460,15 @@
       "alias": ["KMS", "kms", "KMS激活"],
       "textTutorial": null,
       "videoTutorial": null
+    },
+    {
+      "id": "c37",
+      "name": "漫威争锋",
+      "description": "漫威对决",
+      "link": "https://marvelrivals.163.com/",
+      "alias": ["漫威争锋", "marvelrivals", "漫威", "manwei"],
+      "textTutorial": null,
+      "videoTutorial": null
     }
   ]
 }
