@@ -468,7 +468,16 @@
       "link": "https://marvelrivals.163.com/",
       "alias": ["漫威争锋", "marvelrivals", "漫威", "manwei"],
       "textTutorial": "https://itxiaozhang.com/marvel-battle-download-install-guide-pc-requirements-faq/",
-      "videoTutorial": "https://itxiaozhang.com/marvel-battle-download-install-guide-pc-requirements-faq/"
+      "videoTutorial": "https://www.bilibili.com/video/BV1YjiqYWECH"
+    },
+    {
+      "id": "c38",
+      "name": "Everything",
+      "description": "Everything是一款非常强大的文件搜索工具",
+      "link": "https://www.voidtools.com/",
+      "alias": ["Everything", "everything", "Everything Search"],
+      "textTutorial": null,
+      "videoTutorial": null
     }
   ]
 }
