@@ -15,8 +15,8 @@
       "description": "直播与屏幕录制软件",
       "link": "https://obsproject.com/",
       "alias": ["OBS Studio", "OBS", "Open Broadcaster Software"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "r3",
@@ -24,8 +24,8 @@
       "description": "文件压缩与解压工具",
       "link": "http://www.7-zip.org/",
       "alias": ["7-Zip", "7zip", "7z"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "r4",
@@ -33,7 +33,7 @@
       "description": "密码管理器",
       "link": "https://keepassxc.org/",
       "alias": ["KeePassXC", "KeePass X", "KeePass Cross-Platform Community Edition"],
-      "textTutorial": null,
+      "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://www.bilibili.com/video/BV1fZmBYeEy5"
     },
     {
@@ -42,8 +42,8 @@
       "description": "局域网文件传输工具",
       "link": "https://localsend.org/",
       "alias": ["LocalSend", "Local Send"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "r6",
@@ -51,8 +51,8 @@
       "description": "全能下载工具",
       "link": "https://motrix.app/",
       "alias": ["Motrix", "Motrix Downloader"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "r7",
@@ -60,8 +60,8 @@
       "description": "电子邮件客户端",
       "link": "https://www.thunderbird.net/",
       "alias": ["Thunderbird", "Mozilla Thunderbird", "Thunderbird Mail"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "r8",
@@ -69,8 +69,8 @@
       "description": "开源浏览器",
       "link": "https://www.mozilla.org/firefox/",
       "alias": ["Firefox", "Mozilla Firefox"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "r9",
@@ -78,8 +78,8 @@
       "description": "开源视频编辑软件",
       "link": "https://shotcut.org/",
       "alias": ["Shotcut", "Shotcut Editor"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "r10",
@@ -87,8 +87,8 @@
       "description": "开源笔记软件",
       "link": "https://joplinapp.org/",
       "alias": ["Joplin", "Joplin Notes"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "r11",
@@ -96,8 +96,8 @@
       "description": "密码管理器",
       "link": "https://bitwarden.com/download/",
       "alias": ["Bitwarden", "Bitwarden Password Manager"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "r12",
@@ -105,8 +105,8 @@
       "description": "待办事项与时间管理工具",
       "link": "https://follow.is/",
       "alias": ["Follow", "Follow To-Do"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "r13",
@@ -114,8 +114,8 @@
       "description": "图像标注与管理工具",
       "link": "https://pixpinapp.com/",
       "alias": ["PixPin", "Pix Pin"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "r14",
@@ -123,8 +123,8 @@
       "description": "代码编辑器",
       "link": "https://notepad-plus-plus.org/downloads",
       "alias": ["Notepad++", "Notepad Plus Plus"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "r15",
@@ -132,8 +132,8 @@
       "description": "批量重命名工具",
       "link": "https://www.den4b.com/products/renamer",
       "alias": ["ReNamer", "Re Namer"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ],
   "常用软件": [
@@ -143,8 +143,8 @@
       "description": "办公文档处理工具",
       "link": "https://www.wps.cn/",
       "alias": ["WPS", "WPS Office"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c2",
@@ -152,8 +152,8 @@
       "description": "在线视频会议软件",
       "link": "https://meeting.tencent.com/",
       "alias": ["Tencent Meeting", "tengxunhuiyi", "Tencent Conference", "TX Meeting"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c3",
@@ -161,8 +161,8 @@
       "description": "企业级沟通与协作平台",
       "link": "https://www.dingtalk.com/",
       "alias": ["DingTalk", "dingtalk", "Ding Ding"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c4",
@@ -170,8 +170,8 @@
       "description": "综合性视频服务平台",
       "link": "https://www.iqiyi.com/",
       "alias": ["iQIYI", "aiqiyi", "iQiyi Video"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c5",
@@ -179,8 +179,8 @@
       "description": "腾讯视频网站",
       "link": "https://v.qq.com/",
       "alias": ["Tencent Video", "tengxunshipin", "QQ Video"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c6",
@@ -188,8 +188,8 @@
       "description": "视频分享网站",
       "link": "https://www.youku.com/",
       "alias": ["Youku", "youku", "Youku Video"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c7",
@@ -197,8 +197,8 @@
       "description": "视频分享社区",
       "link": "https://www.bilibili.com/",
       "alias": ["Bilibili", "bilibili", "B站"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c8",
@@ -206,8 +206,8 @@
       "description": "在线音乐流媒体服务",
       "link": "https://music.163.com/",
       "alias": ["NetEase Cloud Music", "wangyiyunyinyue", "NCM"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c9",
@@ -215,8 +215,8 @@
       "description": "运行Android应用的模拟器",
       "link": "https://mumu.163.com/",
       "alias": ["MuMu Emulator", "mumu moniqi", "Netease MuMu"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c10",
@@ -224,8 +224,8 @@
       "description": "腾讯游戏平台",
       "link": "https://www.wegame.com.cn/home/",
       "alias": ["WeGame", "Tencent WeGame"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c11",
@@ -233,8 +233,8 @@
       "description": "PC游戏分发平台",
       "link": "https://store.steampowered.com/",
       "alias": ["Steam", "Steam Platform"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c12",
@@ -242,8 +242,8 @@
       "description": "即时通讯与支付工具",
       "link": "https://weixin.qq.com/",
       "alias": ["WeChat", "weixin", "WX"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c13",
@@ -251,8 +251,8 @@
       "description": "即时通讯工具",
       "link": "https://im.qq.com/",
       "alias": ["QQ", "Tencent QQ", "QQ Messenger"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c14",
@@ -260,8 +260,8 @@
       "description": "短视频分享平台",
       "link": "https://www.douyin.com/",
       "alias": ["Douyin", "douyin", "TikTok China"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c15",
@@ -269,8 +269,8 @@
       "description": "文件下载加速工具",
       "link": "https://www.xunlei.com/",
       "alias": ["Xunlei", "xunlei", "Thunder"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c16",
@@ -278,8 +278,8 @@
       "description": "个人云存储服务",
       "link": "https://pan.baidu.com/",
       "alias": ["Baidu Netdisk", "baiduwangpan", "Baidu Cloud"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c17",
@@ -287,8 +287,8 @@
       "description": "阿里巴巴云存储服务",
       "link": "https://www.alipan.com/",
       "alias": ["Aliyun Pan", "aliyunpan", "Alibaba Cloud Disk"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c18",
@@ -296,8 +296,8 @@
       "description": "安全隐私浏览器",
       "link": "https://brave.com/",
       "alias": ["Brave", "Brave Browser"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c19",
@@ -305,8 +305,8 @@
       "description": "微软网页浏览器",
       "link": "https://www.microsoft.com/zh-cn/edge/download",
       "alias": ["Edge", "Microsoft Edge"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c20",
@@ -314,8 +314,8 @@
       "description": "Google Chrome 浏览器",
       "link": "https://www.google.cn/chrome/",
       "alias": ["Google Chrome", "gugeliulanqi", "Chrome Browser"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c21",
@@ -323,8 +323,8 @@
       "description": "免费视频编辑工具",
       "link": "https://www.capcut.cn/",
       "alias": ["Jianying", "jianying", "CapCut China"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c22",
@@ -332,8 +332,8 @@
       "description": "远程控制软件",
       "link": "https://sunlogin.oray.com/download",
       "alias": ["Sunlogin", "xiangrikui", "Sunflower Remote"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c23",
@@ -341,8 +341,8 @@
       "description": "远程桌面控制工具",
       "link": "https://www.todesk.com/",
       "alias": ["ToDesk", "To Desk Remote"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c24",
@@ -350,8 +350,8 @@
       "description": "文件解锁工具",
       "link": "https://www.iobit.com/en/iobit-unlocker.php",
       "alias": ["IObit Unlocker", "IObit File Unlocker"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c25",
@@ -359,8 +359,8 @@
       "description": "软件卸载工具",
       "link": "https://www.geekuninstaller.com/",
       "alias": ["Geek Uninstaller", "geek", "Geek Software Remover"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c26",
@@ -368,8 +368,8 @@
       "description": "通义千问大模型",
       "link": "https://tongyi.aliyun.com/",
       "alias": ["通义千问", "tongyi", "Tongyi Qianwen"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c27",
@@ -377,8 +377,8 @@
       "description": "Kimi大模型",
       "link": "https://kimi.moonshot.cn/",
       "alias": ["Kimi", "kimi", "Kimi AI"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c28",
@@ -386,8 +386,8 @@
       "description": "ChatGLM大模型",
       "link": "https://chatglm.cn/",
       "alias": ["ChatGLM", "chatglm", "ChatGLM AI"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c29",
@@ -395,8 +395,8 @@
       "description": "OpenAI开发的智能助手",
       "link": "https://chatgpt.com/",
       "alias": ["ChatGPT", "chatgpt", "OpenAI ChatGPT"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c30",
@@ -404,8 +404,8 @@
       "description": "电子书下载网站",
       "link": "https://z-library.sk/",
       "alias": ["z-library", "电子书下载", "zlibrary", "电子书"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c30",
@@ -413,8 +413,8 @@
       "description": "AI搜索工具",
       "link": "https://metaso.cn/",
       "alias": ["秘塔AI搜索", "metaso", "Metaso AI Search", "秘塔"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c31",
@@ -422,8 +422,8 @@
       "description": "我的博客",
       "link": "https://itxiaozhang.com/",
       "alias": ["IT小章", "itxiaozhang", "小章"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c32",
@@ -431,8 +431,8 @@
       "description": "123云盘",
       "link": "https://www.123pan.com/",
       "alias": ["123云盘", "123pan", "123 Cloud Disk", "123"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c33",
@@ -449,8 +449,8 @@
       "description": "我的订阅",
       "link": "https://sub.itxiaozhang.com/",
       "alias": ["我的订阅", "sub", "订阅"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c36",
@@ -458,8 +458,8 @@
       "description": "KMS",
       "link": "https://www.coolhub.top/tech-articles/kms_list.html",
       "alias": ["KMS", "kms", "KMS激活"],
-      "textTutorial": null,
-      "videoTutorial": null
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c37",
@@ -468,7 +468,7 @@
       "link": "https://marvelrivals.163.com/",
       "alias": ["漫威争锋", "marvelrivals", "漫威", "manwei"],
       "textTutorial": "https://itxiaozhang.com/marvel-battle-download-install-guide-pc-requirements-faq/",
-      "videoTutorial": "https://www.bilibili.com/video/BV1YjiqYWECH"
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
     {
       "id": "c38",
@@ -476,8 +476,55 @@
       "description": "Everything是一款非常强大的文件搜索工具",
       "link": "https://www.voidtools.com/",
       "alias": ["Everything", "everything", "Everything Search"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c39",
+      "name": "XTU工具",
+      "description": "XTU是一款功能强大的系统监控和调整工具，旨在帮助用户优化和超频英特尔处理器。",
+      "link": "https://www.intel.com/content/www/us/en/download/17881/intel-extreme-tuning-utility-intel-xtu.html",
+      "alias": ["XTU工具", "xtu工具", "XTU", "xtu"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c40",
+      "name": "卡巴斯基",
+      "description": "卡巴斯基软件是一款由俄罗斯卡巴斯基实验室开发的知名安全软件，主要提供反病毒、防黑客和反垃圾邮件功能。",
+      "link": "https://www.kaspersky.com/",
+      "alias": ["卡巴斯基", "kaspersky", "卡巴斯基杀毒软件"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c41",
+      "name": "小红伞",
+      "description": "小红伞是德国的一款杀毒软件，个人用户免费。",
+      "link": "https://www.avira.com/",
+      "alias": ["小红伞", "avira", "小红伞杀毒软件"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c42",
+      "name": "英伟达显卡驱动下载",
+      "description": "这里提供各个版本的英伟达显卡驱动下载",
+      "link": "https://www.nvidia.cn/geforce/drivers/",
+      "alias": ["NVIDIA GeForce Experience", "nvidia", "NVIDIA", "英伟达驱动", "英伟达"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c43",
+      "name": "自用",
+      "description": "自用工具",
+      "link": "https://itxiaozhang.com/",
+      "alias": ["666"],
       "textTutorial": null,
       "videoTutorial": null
     }
   ]
 }
+
+
