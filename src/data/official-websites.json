@@ -339,7 +339,7 @@
       "id": "c23",
       "name": "ToDesk",
       "description": "远程桌面控制工具",
-      "link": "https://www.todesk.com/",
+      "link": "https://www.todesk.com/download.html",
       "alias": ["ToDesk", "To Desk Remote"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
@@ -523,6 +523,15 @@
       "alias": ["666"],
       "textTutorial": null,
       "videoTutorial": null
+    },
+    {
+      "id": "c44",
+      "name": "Windows Update Blocker",
+      "description": "Windows Update Blocker是一款用于阻止Windows更新的小工具",
+      "link": "https://www.sordum.org/9470/windows-update-blocker-v1-8/",
+      "alias": ["Windows Update Blocker", "更新1214", "Windows Update Blocker"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }
