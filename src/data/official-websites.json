@@ -532,6 +532,15 @@
       "alias": ["Windows Update Blocker", "更新1214", "Windows Update Blocker"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c45",
+      "name": "圣诞主题网页",
+      "description": "使用HTML、CSS和JavaScript创建一个充满圣诞氛围的网页。通过实现雪花飘落、圣诞树和蜡烛闪烁等动态效果。",
+      "link": "christmas-scene.pages.dev",
+      "alias": ["圣诞主题网页", "圣诞主题", "圣诞", "christmas"],
+      "textTutorial": "https://itxiaozhang.com/create-christmas-themed-webpage-with-html-css-javascript/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }
