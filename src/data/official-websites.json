@@ -541,6 +541,42 @@
       "alias": ["圣诞主题网页", "圣诞主题", "圣诞", "christmas"],
       "textTutorial": "https://itxiaozhang.com/create-christmas-themed-webpage-with-html-css-javascript/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c46",
+      "name": "抖音直播工具",
+      "description": "抖音直播伴侣是抖音官方推出的直播工具，可以帮助用户进行直播。",
+      "link": "https://streamingtool.douyin.com/",
+      "alias": ["直播伴侣", "抖音直播伴侣"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c47",
+      "name": "虎牙直播",
+      "description": "虎牙直播是虎牙直播官方推出的直播工具，可以帮助用户进行直播。",
+      "link": "https://www.huya.com/",
+      "alias": ["虎牙直播", "虎牙"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c48",
+      "name": "斗鱼直播",
+      "description": "斗鱼直播是斗鱼直播官方推出的直播工具，可以帮助用户进行直播。",
+      "link": "https://www.douyu.com/",
+      "alias": ["斗鱼直播", "斗鱼"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c49",
+      "name": "知乎",
+      "description": "知乎是一个中文社区问答平台，用户可以在这里提问、回答、分享知识和经验。",
+      "link": "https://www.zhihu.com/",
+      "alias": ["知乎", "zhihu"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }
