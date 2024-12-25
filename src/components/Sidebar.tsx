@@ -19,19 +19,36 @@ export default function Sidebar({ isOpen, activeTool, onToolSelect, onHomeClick 
       animate={{ x: isOpen ? 0 : -280 }}
       className="fixed left-0 top-0 h-full w-70 bg-gradient-to-br from-gray-900 via-indigo-900 to-purple-900 text-white shadow-xl z-[60] grid grid-rows-[auto_1fr_auto]"
     >
-      <div className="p-6 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 backdrop-blur-sm border-b border-white/10">
-        <div 
-          className="flex items-center gap-4 cursor-pointer group" 
+      {/* 简化后的头部设计 */}
+      <div className="p-6 border-b border-white/10">
+        <motion.div 
+          className="flex items-center gap-6 cursor-pointer group" // 增加间距
           onClick={onHomeClick}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
         >
-          <div className="p-3 bg-white/90 rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-200">
-            <img src="/favicon.svg" alt="logo" className="w-8 h-8" />
+          {/* Logo容器 - 更大尺寸 */}
+          <motion.div 
+            whileHover={{ rotate: 5 }}
+            className="flex items-center justify-center" // 添加居中对齐
+          >
+            <img 
+              src="/favicon.svg" 
+              alt="logo" 
+              className="w-12 h-12 transform group-hover:scale-110 transition-transform duration-300" // 增大到 12x12
+            />
+          </motion.div>
+
+          {/* 文字部分 */}
+          <div className="transform group-hover:translate-x-1 transition-transform duration-300">
+            <h1 className="text-2xl font-bold tracking-wide bg-gradient-to-r from-white to-white/90 bg-clip-text text-transparent">
+              {t('toolbox')}
+            </h1>
+            <p className="text-sm text-indigo-200/90 font-medium mt-0.5">
+              {t('boostProductivity')}
+            </p>
           </div>
-          <div>
-            <h1 className="text-2xl font-bold tracking-wide">{t('toolbox')}</h1>
-            <p className="text-sm text-indigo-200/90">{t('boostProductivity')}</p>
-          </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="overflow-y-auto scrollbar-hide">
@@ -75,7 +92,7 @@ export default function Sidebar({ isOpen, activeTool, onToolSelect, onHomeClick 
             </div>
             <div className="flex items-center text-sm text-gray-300 hover:text-white transition-colors">
               <Laptop className="w-4 h-4 mr-2 text-indigo-400" />
-              <span>各种IT咨询服务</span>
+              <span>提供各种IT服务</span>
             </div>
           </div>
         </div>
