@@ -577,6 +577,24 @@
       "alias": ["知乎", "zhihu"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c50",
+      "name": "Python",
+      "description": "Python编程语言官方下载",
+      "link": "https://www.python.org/downloads/",
+      "alias": ["Python", "python", "Python Programming"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c51",
+      "name": "Git",
+      "description": "分布式版本控制系统",
+      "link": "https://git-scm.com/downloads",
+      "alias": ["Git", "git", "Git SCM"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }

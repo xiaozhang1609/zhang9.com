@@ -7,17 +7,13 @@ import {
   Image,
   QrCode,
   Type,
-  Timer,
   Laptop,
   MessageSquare,
   KeyRound,
   Palette,
   LayoutGrid,
   Info,
-  Link,
-  BookOpen,
-  Rss,
-  Newspaper
+  Link
 } from 'lucide-react';
 
 export interface ToolConfig {
@@ -32,11 +28,8 @@ export interface ToolConfig {
 export const categories = {
   common: '常用工具',
   images: '图片工具',
-  time: '时间工具',
   text: '文本工具',
-  files: '文件工具',
-  games: '小游戏',
-  special: '自用工具'
+  games: '小游戏'
 } as const;
 
 export const toolsConfig: ToolConfig[] = [
@@ -61,7 +54,7 @@ export const toolsConfig: ToolConfig[] = [
     id: 'fileTree',
     icon: FolderTree,
     name: 'fileTree',
-    category: 'files',
+    category: 'common',  // 将 'files' 改为 'common'
     description: 'fileTreeDesc',
     component: lazy(() => import('../components/tools/FileTree'))
   },
@@ -133,7 +126,7 @@ export const toolsConfig: ToolConfig[] = [
     id: 'reviewGenerator',
     icon: MessageSquare,
     name: 'reviewGenerator',
-    category: 'special',
+    category: 'text',
     description: 'reviewGeneratorDesc',
     component: lazy(() => import('../components/tools/ReviewGenerator'))
   },
@@ -146,68 +139,12 @@ export const toolsConfig: ToolConfig[] = [
     component: lazy(() => import('../components/tools/TextTool'))
   },
   {
-    id: 'countdown',
-    icon: Timer,
-    name: 'countdown',
-    category: 'time',
-    description: 'countdownDesc',
-    component: lazy(() => import('../components/tools/CountdownTool'))
-  },
-  {
-    id: 'newYearCountdown',
-    icon: Timer,
-    name: 'newYearCountdown',
-    category: 'time',
-    description: 'newYearCountdownDesc',
-    component: lazy(() => import('../components/tools/NewYearCountdown'))
-  },
-  {
-    id: 'pomodoro',
-    icon: Timer,
-    name: 'pomodoro',
-    category: 'time',
-    description: 'pomodoroDesc',
-    component: lazy(() => import('../components/tools/PomodoroTool'))
-  },
-  {
-    id: 'basicTimer',
-    icon: Timer,
-    name: 'basicTimer',
-    category: 'time',
-    description: 'basicTimerDesc',
-    component: lazy(() => import('../components/tools/BasicTimerTool'))
-  },
-  {
     id: 'quickLinks',
     icon: Link,
     name: 'quickLinks',
-    category: 'special',
+    category: 'common',
     description: 'quickLinksDesc',
     component: lazy(() => import('../components/tools/quickLinks'))
-  },
-  {
-    id: 'readingRecord',
-    icon: BookOpen,
-    name: 'readingRecord',
-    category: 'special',
-    description: 'readingRecordDesc',
-    component: lazy(() => import('../components/tools/ReadingRecord'))
-  },
-  {
-    id: 'blog',
-    icon: Rss,
-    name: 'blog',
-    category: 'special',
-    description: 'blogDesc',
-    component: lazy(() => import('../components/tools/Blog'))
-  },
-  {
-    id: 'subscription',
-    icon: Newspaper,
-    name: 'subscription',
-    category: 'special',
-    description: 'subscriptionDesc',
-    component: lazy(() => import('../components/tools/Subscription'))
   },
   {
     id: 'textFormatter',
@@ -217,7 +154,7 @@ export const toolsConfig: ToolConfig[] = [
     description: 'textFormatterDesc',
     component: lazy(() => import('../components/tools/TextFormatter'))
   }
-];
+].filter(tool => !['readingRecord', 'blog', 'subscription'].includes(tool.id));
 
 // 单独的 about 页面配置
 export const aboutConfig = {

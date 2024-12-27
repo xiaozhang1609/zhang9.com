@@ -153,7 +153,7 @@ export default function PCRepairServices() {
                 需要帮助？
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300">
-                我们的专业团队随时为您服务
+                小章随时为您服务
               </p>
             </div>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">

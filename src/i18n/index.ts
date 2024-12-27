@@ -255,7 +255,7 @@ const resources = {
       start: '开始',
       workGroup: '第',
       pomodoroCount: '第',
-      fixpc: '电脑问题解答',
+      fixpc: '远程修电脑',
       fixpcDesc: '专业的电脑问题解决服务',
       date: '日期',
       time: '时间',
