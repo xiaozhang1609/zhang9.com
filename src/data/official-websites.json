@@ -357,7 +357,7 @@
       "id": "c25",
       "name": "geek",
       "description": "软件卸载工具",
-      "link": "https://www.geekuninstaller.com/",
+      "link": "https://geekuninstaller.com/download",
       "alias": ["Geek Uninstaller", "geek", "Geek Software Remover"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
@@ -593,6 +593,15 @@
       "description": "分布式版本控制系统",
       "link": "https://git-scm.com/downloads",
       "alias": ["Git", "git", "Git SCM"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c52",
+      "name": "火绒安全",
+      "description": "国产安全防护软件",
+      "link": "https://huorong.cn/person5.html",
+      "alias": ["火绒", "huorong", "火绒安全软件"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
