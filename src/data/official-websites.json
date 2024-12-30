@@ -604,6 +604,51 @@
       "alias": ["火绒", "huorong", "火绒安全软件"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c53",
+      "name": "无畏契约",
+      "description": "Riot Games开发的5v5第一人称射击游戏",
+      "link": "https://val.qq.com/download.html",
+      "alias": ["无畏契约", "Valorant", "瓦罗兰特", "无畏"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c54",
+      "name": "网易邮箱",
+      "description": "网易免费邮箱服务",
+      "link": "https://mail.163.com/",
+      "alias": ["网易邮箱", "163邮箱", "NetEase Mail"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c55",
+      "name": "QQ邮箱",
+      "description": "腾讯免费邮箱服务",
+      "link": "https://mail.qq.com/",
+      "alias": ["QQ邮箱", "QQMail", "腾讯邮箱"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c56",
+      "name": "Gmail",
+      "description": "Google免费邮箱服务",
+      "link": "https://mail.google.com/",
+      "alias": ["Gmail", "Google Mail", "谷歌邮箱"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c57",
+      "name": "Outlook",
+      "description": "微软免费邮箱服务",
+      "link": "https://outlook.live.com/",
+      "alias": ["Outlook", "Microsoft Outlook", "outlook邮箱"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }
