@@ -313,7 +313,7 @@
       "name": "谷歌浏览器",
       "description": "Google Chrome 浏览器",
       "link": "https://www.google.cn/chrome/",
-      "alias": ["Google Chrome", "gugeliulanqi", "Chrome Browser"],
+      "alias": ["Google Chrome", "google", "gugeliulanqi", "Chrome Browser"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
@@ -649,8 +649,15 @@
       "alias": ["Outlook", "Microsoft Outlook", "outlook邮箱"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c58",
+      "name": "AMD显卡驱动下载",
+      "description": "AMD官方驱动下载页面，提供各版本AMD显卡驱动",
+      "link": "https://www.amd.com/zh-cn/support/download/drivers.html",
+      "alias": ["AMD", "amd", "AMD驱动", "AMD显卡"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }
-
-
