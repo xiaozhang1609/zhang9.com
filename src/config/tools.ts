@@ -13,7 +13,8 @@ import {
   Palette,
   LayoutGrid,
   Info,
-  Link
+  Link,
+  Monitor // 添加新图标
 } from 'lucide-react';
 
 export interface ToolConfig {
@@ -153,6 +154,14 @@ export const toolsConfig: ToolConfig[] = [
     category: 'text',
     description: 'textFormatterDesc',
     component: lazy(() => import('../components/tools/TextFormatter'))
+  },
+  {
+    id: 'winmirror',
+    icon: Monitor,
+    name: '镜像下载',
+    category: 'common',
+    description: 'winmirrorDesc',
+    component: lazy(() => import('../components/tools/WinMirror'))
   }
 ].filter(tool => !['readingRecord', 'blog', 'subscription'].includes(tool.id));
 
