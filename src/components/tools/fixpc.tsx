@@ -10,14 +10,14 @@ export default function PCRepairServices() {
               <div className="flex justify-center items-center gap-16">
                 <div className="w-80 aspect-[4/5]">
                   <img 
-                    src="/weixin.png" 
+                    src="/weixin1.png" 
                     alt="WeChat QR Code" 
                     className="w-full h-full rounded-xl shadow-lg object-cover transition-transform hover:scale-105"
                   />
                 </div>
                 <div className="w-80 aspect-[4/5]">
                   <img 
-                    src="/zhifubao.png" 
+                    src="/zhifubao1.png" 
                     alt="Alipay QR Code" 
                     className="w-full h-full rounded-xl shadow-lg object-cover transition-transform hover:scale-105"
                   />
