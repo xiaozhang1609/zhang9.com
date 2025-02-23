@@ -610,7 +610,7 @@
       "name": "无畏契约",
       "description": "Riot Games开发的5v5第一人称射击游戏",
       "link": "https://val.qq.com/download.html",
-      "alias": ["无畏契约", "Valorant", "瓦罗兰特", "无畏"],
+      "alias": ["无畏契约", "Valorant", "瓦罗兰特", "无畏", "wuwei"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
@@ -656,6 +656,24 @@
       "description": "AMD官方驱动下载页面，提供各版本AMD显卡驱动",
       "link": "https://www.amd.com/zh-cn/support/download/drivers.html",
       "alias": ["AMD", "amd", "AMD驱动", "AMD显卡"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c59",
+      "name": "uu加速器",
+      "description": "网络游戏加速工具",
+      "link": "https://uu.163.com/",
+      "alias": ["UU加速器", "uu加速器", "网易UU"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c60",
+      "name": "uu远程",
+      "description": "远程控制软件",
+      "link": "https://uuyc.163.com/",
+      "alias": ["UU远程", "uu远程", "UU Remote", "网易UU远程"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
