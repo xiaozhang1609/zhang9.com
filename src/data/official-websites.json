@@ -676,6 +676,15 @@
       "alias": ["UU远程", "uu远程", "UU Remote", "网易UU远程"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c61",
+      "name": "完美世界竞技平台",
+      "description": "完美世界游戏竞技平台",
+      "link": "https://pvp.wanmei.com/",
+      "alias": ["完美世界竞技平台", "完美竞技平台", "完美平台", "PVP Platform"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }
