@@ -33,7 +33,7 @@
 
 ## 🌐 在线体验
 
-访问：[https://fixpc.cc](https://fixpc.cc)
+访问：[https://zhang9.com](https://zhang9.com)
 
 ---
 
@@ -72,4 +72,4 @@ A free online toolbox collection designed to boost your productivity.
 
 ## 🌐 Online Demo
 
-Visit: [https://fixpc.cc](https://fixpc.cc/)
+Visit: [https://zhang9.com](https://zhang9.com/)
