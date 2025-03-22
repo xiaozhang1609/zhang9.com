@@ -27,7 +27,7 @@ export default function SEO({
     title,
     '在线工具',
     '免费工具',
-    '小章工具箱',
+    '章久工具箱',
     ...Object.values(categories)
   ].filter(Boolean).join(',');
 
@@ -36,7 +36,7 @@ export default function SEO({
   return (
     <Helmet>
       <html lang={i18n.language} />
-      <title>{`${title} - 小章工具箱`}</title>
+      <title>{`${title} - 章久工具箱`}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
 
@@ -44,7 +44,7 @@ export default function SEO({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:site_name" content="小章工具箱" />
+      <meta property="og:site_name" content="章久工具箱" />
       <meta property="og:locale" content={i18n.language === 'zh' ? 'zh_CN' : 'en_US'} />
 
       <link rel="canonical" href={canonicalUrl} />

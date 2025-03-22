@@ -4,7 +4,7 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
-      toolbox: 'Zhang\'s Toolbox',
+      toolbox: '章久工具箱',
       counter: 'Counter',
       tools: 'Tools',
       contact: 'Contact',
@@ -60,7 +60,7 @@ const resources = {
       enterSoftwareName: 'Enter software name',
       pleaseEnterSoftwareName: 'Please enter software name',
       about: 'About',
-      aboutDescription: 'Welcome to Zhang\'s Toolbox, a free online tool collection',
+      aboutDescription: 'Welcome to Zhang9 Toolbox, a free online tool collection',
       socialMedia: 'Social Media',
       fileTreeDesc: 'Generate file directory tree structure',
       game2048Desc: 'Classic 2048 game',
@@ -164,7 +164,7 @@ const resources = {
   },
   zh: {
     translation: {
-      toolbox: '小章工具箱',
+      toolbox: '章久工具箱',
       boostProductivity: '提升您的工作效率',
       counter: '计数器',
       tools: '工具',
@@ -221,7 +221,7 @@ const resources = {
       enterSoftwareName: '输入软件名称',
       pleaseEnterSoftwareName: '请输入软件名称',
       about: '关于',
-      aboutDescription: '欢迎使用小章工具箱，这是一个免费的在线工具集合',
+      aboutDescription: '欢迎使用章久工具箱，这是一个免费的在线工具集合',
       socialMedia: '社交媒体',
 
       fileTreeDesc: '生成文件目录树结构',
