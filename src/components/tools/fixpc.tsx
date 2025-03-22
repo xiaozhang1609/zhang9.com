@@ -10,28 +10,28 @@ export default function PCRepairServices() {
               <div className="grid grid-cols-2 gap-4 w-full">
                 <div className="w-full aspect-square">
                   <img 
-                    src="/3.png" 
+                    src="/3.webp" 
                     alt="WeChat QR Code" 
                     className="w-full h-full rounded-xl shadow-lg object-cover transition-transform hover:scale-105"
                   />
                 </div>
                 <div className="w-full aspect-square">
                   <img 
-                    src="/4.png" 
+                    src="/4.webp" 
                     alt="Alipay QR Code" 
                     className="w-full h-full rounded-xl shadow-lg object-cover transition-transform hover:scale-105"
                   />
                 </div>
                 <div className="w-full aspect-square">
                   <img 
-                    src="/5.png" 
+                    src="/5.webp" 
                     alt="QR Code" 
                     className="w-full h-full rounded-xl shadow-lg object-cover transition-transform hover:scale-105"
                   />
                 </div>
                 <div className="w-full aspect-square">
                   <img 
-                    src="/6.png" 
+                    src="/6.webp" 
                     alt="QR Code" 
                     className="w-full h-full rounded-xl shadow-lg object-cover transition-transform hover:scale-105"
                   />
