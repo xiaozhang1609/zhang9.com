@@ -10,6 +10,7 @@ interface QuickLink {
 
 const links: QuickLink[] = [
   // 系统工具
+  { title: '小章软件推荐', url: 'https://www.123912.com/s/dptuVv-D1oW3', category: 'system' },
   { title: '远程安装系统', url: 'https://www.123pan.com/s/dptuVv-6fQW3.html', category: 'system' },
   { title: '启动U盘', url: 'https://www.123pan.com/s/dptuVv-yfQW3.html', category: 'system' },
   { title: '驱动备用', url: 'https://www.123pan.com/s/dptuVv-jfQW3.html', category: 'system' },
