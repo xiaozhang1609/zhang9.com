@@ -44,12 +44,12 @@ export const toolsConfig: ToolConfig[] = [
   },
 
   {
-    id: 'fixpc',
+    id: 'paymentQRCode',
     icon: Laptop,
-    name: 'fixpc',
+    name: 'paymentQRCode',
     category: 'common',
-    description: 'fixpcDesc',
-    component: lazy(() => import('../components/tools/fixpc'))
+    description: 'paymentQRCodeDesc',
+    component: lazy(() => import('../components/tools/PaymentQRCode'))
   },
   {
     id: 'fileTree',

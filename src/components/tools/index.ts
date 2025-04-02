@@ -11,11 +11,11 @@ import TimeTools from './NewYearCountdown';
 import ImageCompress from './imageCompress';
 import ImageConverter from './imageConverter';
 import ImageSplit from './imageSplit';
-import FixPC from './fixpc';
+import PaymentQRCode from './PaymentQRCode';
 
 export {
   FileTree,
-  FixPC,
+  PaymentQRCode,
   Game2048,
   ImageTools,
   Generator,
