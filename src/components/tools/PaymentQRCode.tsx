@@ -54,7 +54,7 @@ const [isTransitioning, setIsTransitioning] = useState(false)
         setImageError(false)
         setTimeout(() => setIsTransitioning(false), 400)
       }
-    }, 30000)
+    }, 10000)
 
     return () => {
       clearInterval(timer)
