@@ -685,6 +685,15 @@
       "alias": ["完美世界竞技平台", "完美竞技平台", "完美平台", "PVP Platform"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c62",
+      "name": "守望先锋2",
+      "description": "守望先锋2是暴雪娱乐开发的一款多人在线第一人称射击游戏",
+      "link": "https://ow.blizzard.cn/download/#/",
+      "alias": ["守望先锋2", "Overwatch 2", "守望先锋"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }

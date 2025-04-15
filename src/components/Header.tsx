@@ -9,13 +9,8 @@ interface HeaderProps {
   onAboutClick: () => void;
 }
 
-export default function Header({ onMenuClick, onHomeClick, onAboutClick }: HeaderProps) {
-  const { t, i18n } = useTranslation();
-
-  const toggleLanguage = () => {
-    const newLang = i18n.language === 'zh' ? 'en' : 'zh';
-    i18n.changeLanguage(newLang);
-  };
+export default function Header({ onMenuClick, onHomeClick }: Omit<HeaderProps, 'onAboutClick'>) {
+  const { t } = useTranslation();
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-200 transition-all duration-200">
@@ -51,25 +46,7 @@ export default function Header({ onMenuClick, onHomeClick, onAboutClick }: Heade
             <SiBilibili className="w-5 h-5 text-gray-700" />
           </a>
 
-          <button
-            onClick={toggleLanguage}
-            className="p-2.5 hover:bg-gray-100 rounded-xl transition-all duration-200 active:scale-95"
-            aria-label={t('switchLang')}
-            title={t('switchLang')}
-          >
-            <span className="text-sm font-medium text-gray-700">
-              {i18n.language === 'zh' ? 'EN' : '中文'}
-            </span>
-          </button>
-
-          <button
-            onClick={onAboutClick}
-            className="p-2.5 hover:bg-gray-100 rounded-xl transition-all duration-200 active:scale-95"
-            aria-label={t('about')}
-            title={t('about')}
-          >
-            <Info className="w-5 h-5 text-gray-700" />
-          </button>
+          
         </div>
       </div>
     </header>

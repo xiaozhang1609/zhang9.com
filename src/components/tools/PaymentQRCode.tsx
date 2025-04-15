@@ -7,8 +7,8 @@ import { WechatOutlined, AlipayCircleOutlined } from '@ant-design/icons'
 import debounce from 'lodash/debounce'
 
 const paymentMethods = [
-  { id: 'wechat', name: '微信支付', images: ['/weixin1.webp', '/weixin2.webp'], icon: <WechatOutlined className="text-2xl text-[#07C160]" /> },
-  { id: 'alipay', name: '支付宝', images: ['/zhifubao1.webp', '/zhifubao2.webp'], icon: <AlipayCircleOutlined className="text-2xl text-[#1677FF]" /> }
+  { id: 'wechat', name: '微信支付', images: ['/weixinzhifu1.webp', '/weixinzhifu2.webp'], icon: <WechatOutlined className="text-2xl text-[#07C160]" /> },
+  { id: 'alipay', name: '支付宝', images: ['/zhifubaozhifu1.webp', '/zhifubaozhifu2.webp'], icon: <AlipayCircleOutlined className="text-2xl text-[#1677FF]" /> }
 ]
 
 export default function PaymentQRCode() {
