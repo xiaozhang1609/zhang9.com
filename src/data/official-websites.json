@@ -694,6 +694,15 @@
       "alias": ["守望先锋2", "Overwatch 2", "守望先锋"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c63",
+      "name": "Windows 10/11安装激活指南",
+      "description": "Windows 10和11系统的安装与激活教程",
+      "link": "https://itxiaozhang.com/windows-10-11-install-activation-guide/",
+      "alias": ["激活", "系统激活"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }
