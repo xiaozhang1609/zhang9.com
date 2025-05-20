@@ -703,6 +703,15 @@
       "alias": ["激活", "系统激活"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c64",
+      "name": "驱动总裁",
+      "description": "免费不限速的驱动工具",
+      "link": "https://www.sysceo.com/dc.html",
+      "alias": ["驱动总裁", "Driver CEO"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }
