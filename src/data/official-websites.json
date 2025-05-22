@@ -712,6 +712,24 @@
       "alias": ["驱动总裁", "Driver CEO"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c65",
+      "name": "三角洲行动",
+      "description": "一款策略射击游戏",
+      "link": "https://df.qq.com/main.shtml",
+      "alias": ["Delta Force", "三角洲", "Delta"],
+      "textTutorial": "https://itxiaozhang.com/delta-force-tutorial",
+      "videoTutorial": "https://www.bilibili.com/video/BV1DeltaForce"
+    },
+    {
+      "id": "c66",
+      "name": "腾讯电脑管家",
+      "description": "电脑安全与管理软件",
+      "link": "https://guanjia.qq.com/",
+      "alias": ["腾讯管家", "电脑管家", "Tencent PC Manager"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }
