@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Menu, Home, Info } from 'lucide-react';
-import { SiBilibili } from 'react-icons/si';
+
 
 interface HeaderProps {
   onMenuClick: () => void;
@@ -36,15 +36,7 @@ export default function Header({ onMenuClick, onHomeClick }: Omit<HeaderProps, '
         </div>
 
         <div className="flex items-center gap-2">
-          <a
-            href="https://space.bilibili.com/3546607630944387"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2.5 hover:bg-gray-100 rounded-xl transition-all duration-200 active:scale-95"
-            title="Bilibili"
-          >
-            <SiBilibili className="w-5 h-5 text-gray-700" />
-          </a>
+
 
           
         </div>

@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { categories, getToolsByCategory } from '../config/tools';
-import { MessageSquare, Laptop } from 'lucide-react';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -66,11 +65,20 @@ export default function Sidebar({ isOpen, activeTool, onToolSelect, onHomeClick 
                     className={`w-full px-4 py-2.5 flex items-center gap-3 rounded-lg transition-all duration-200 ${
                       activeTool === tool.id
                         ? 'bg-white/10 text-white'
-                        : 'hover:bg-white/5 text-gray-300 hover:text-white'
+                        : tool.isNew 
+                          ? 'bg-gradient-to-r from-amber-500/20 to-amber-600/20 hover:from-amber-500/30 hover:to-amber-600/30 text-white'
+                          : 'hover:bg-white/5 text-gray-300 hover:text-white'
                     }`}
                   >
-                    <tool.icon className={`w-5 h-5 ${activeTool === tool.id ? 'text-indigo-400' : ''}`} />
-                    <span>{t(tool.name)}</span>
+                    <tool.icon className={`w-5 h-5 ${activeTool === tool.id ? 'text-indigo-400' : tool.isNew ? 'text-amber-400' : ''}`} />
+                    <div className="flex items-center">
+                      <span>{t(tool.name)}</span>
+                      {tool.isNew && (
+                        <span className="ml-2 px-1.5 py-0.5 text-[10px] bg-amber-500 text-white rounded-full animate-pulse">
+                          NEW
+                        </span>
+                      )}
+                    </div>
                   </button>
                 ))}
               </div>
@@ -79,24 +87,7 @@ export default function Sidebar({ isOpen, activeTool, onToolSelect, onHomeClick 
         </div>
       </div>
 
-      <div className="w-full p-4 bg-gradient-to-t from-gray-900 via-gray-900/95 to-transparent">
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
-          <h3 className="text-sm font-medium mb-3 flex items-center text-indigo-200">
-            {t('contact')}
-            <span className="ml-2 px-2 py-0.5 text-xs bg-indigo-500/20 rounded-full">24/7</span>
-          </h3>
-          <div className="space-y-2">
-            <div className="flex items-center text-sm text-gray-300 hover:text-white transition-colors">
-              <MessageSquare className="w-4 h-4 mr-2 text-indigo-400" />
-              <span>微信：xiaozhang1609</span>
-            </div>
-            <div className="flex items-center text-sm text-gray-300 hover:text-white transition-colors">
-              <Laptop className="w-4 h-4 mr-2 text-indigo-400" />
-              <span>提供各种IT服务</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* 底部区域已移除 */}
     </motion.div>
   );
 }

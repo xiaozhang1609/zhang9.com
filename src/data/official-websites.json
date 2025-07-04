@@ -191,15 +191,7 @@
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
     },
-    {
-      "id": "c7",
-      "name": "哔哩哔哩",
-      "description": "视频分享社区",
-      "link": "https://www.bilibili.com/",
-      "alias": ["Bilibili", "bilibili", "B站"],
-      "textTutorial": "https://itxiaozhang.com/",
-      "videoTutorial": "https://space.bilibili.com/3546607630944387"
-    },
+
     {
       "id": "c8",
       "name": "网易云音乐",

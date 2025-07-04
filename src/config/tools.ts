@@ -14,7 +14,8 @@ import {
   LayoutGrid,
   Info,
   Link,
-  Monitor // 添加新图标
+  Monitor, // 添加新图标
+  Wrench
 } from 'lucide-react';
 
 export interface ToolConfig {
@@ -33,7 +34,26 @@ export const categories = {
   games: '小游戏'
 } as const;
 
+export interface ToolConfig {
+  id: string;
+  icon: any;
+  name: string;
+  category: keyof typeof categories;
+  description: string;
+  component: React.LazyExoticComponent<any>;
+  isNew?: boolean; // 添加新属性标记新功能
+}
+
 export const toolsConfig: ToolConfig[] = [
+  {
+    id: 'computerRepair',
+    icon: Wrench,
+    name: 'computerRepair',
+    category: 'common',
+    description: 'computerRepairDesc',
+    component: lazy(() => import('../components/tools/ComputerRepair')),
+    isNew: true // 标记为新功能
+  },
   {
     id: 'officialWebsiteSearch',
     icon: Hash,
@@ -41,103 +61,6 @@ export const toolsConfig: ToolConfig[] = [
     category: 'common',
     description: 'officialWebsiteSearchDesc',
     component: lazy(() => import('../components/tools/OfficialWebsiteSearch'))
-  },
-
-  {
-    id: 'paymentQRCode',
-    icon: Laptop,
-    name: 'paymentQRCode',
-    category: 'common',
-    description: 'paymentQRCodeDesc',
-    component: lazy(() => import('../components/tools/PaymentQRCode'))
-  },
-  {
-    id: 'fileTree',
-    icon: FolderTree,
-    name: 'fileTree',
-    category: 'common',  // 将 'files' 改为 'common'
-    description: 'fileTreeDesc',
-    component: lazy(() => import('../components/tools/FileTree'))
-  },
-  {
-    id: 'game2048',
-    icon: Gamepad2,
-    name: 'game2048',
-    category: 'games',
-    description: 'game2048Desc',
-    component: lazy(() => import('../components/tools/Game2048'))
-  },
-  {
-    id: 'imageCompress',
-    icon: Image,
-    name: 'imageCompress',
-    category: 'images',
-    description: 'imageCompressDesc',
-    component: lazy(() => import('../components/tools/imageCompress'))
-  },
-  {
-    id: 'imageConverter',
-    icon: Image,
-    name: 'imageConverter',
-    category: 'images',
-    description: 'imageConverterDesc',
-    component: lazy(() => import('../components/tools/imageConverter'))
-  },
-  {
-    id: 'imageSplit',
-    icon: LayoutGrid,
-    name: 'imageSplit',
-    category: 'images',
-    description: 'imageSplitDesc',
-    component: lazy(() => import('../components/tools/imageSplit'))
-  },
-  {
-    id: 'generator',
-    icon: KeyRound,
-    name: 'generator',
-    category: 'common',
-    description: 'generatorDesc',
-    component: lazy(() => import('../components/tools/Generator'))
-  },
-  {
-    id: 'pureBackground',
-    icon: Palette,
-    name: 'pureBackground',
-    category: 'common',
-    description: 'pureBackgroundDesc',
-    component: lazy(() => import('../components/tools/PureBackground'))
-  },
-  {
-    id: 'qrCode',
-    icon: QrCode,
-    name: 'qrCode',
-    category: 'common',
-    description: 'qrCodeDesc',
-    component: lazy(() => import('../components/tools/QRCode'))
-  },
-  {
-    id: 'quadWallpaper',
-    icon: LayoutGrid,
-    name: 'quadWallpaper',
-    category: 'images',
-    description: 'quadWallpaperDesc',
-    component: lazy(() => import('../components/tools/QuadWallpaper'))
-  },
-  {
-    id: 'reviewGenerator',
-    icon: MessageSquare,
-    name: 'reviewGenerator',
-    category: 'text',
-    description: 'reviewGeneratorDesc',
-    component: lazy(() => import('../components/tools/ReviewGenerator'))
-  },
-  {
-    id: 'textTool',
-    icon: Type,
-    name: 'textTool',
-    category: 'text',
-    description: 'textToolDesc',
-    component: lazy(() => import('../components/tools/TextTool'))
   },
   {
     id: 'quickLinks',
@@ -148,20 +71,102 @@ export const toolsConfig: ToolConfig[] = [
     component: lazy(() => import('../components/tools/quickLinks'))
   },
   {
-    id: 'textFormatter',
-    icon: Type,
-    name: 'textFormatter',
-    category: 'text',
-    description: 'textFormatterDesc',
-    component: lazy(() => import('../components/tools/TextFormatter'))
-  },
-  {
     id: 'winmirror',
     icon: Monitor,
     name: '镜像下载',
     category: 'common',
     description: 'winmirrorDesc',
     component: lazy(() => import('../components/tools/WinMirror'))
+  },
+
+  {
+    id: 'fileTree',
+    icon: FolderTree,
+    name: 'fileTree',
+    category: 'common',
+    description: 'fileTreeDesc',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'game2048',
+    icon: Gamepad2,
+    name: 'game2048',
+    category: 'games',
+    description: 'game2048Desc',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'imageCompress',
+    icon: Image,
+    name: 'imageCompress',
+    category: 'images',
+    description: 'imageCompressDesc',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'imageConverter',
+    icon: Image,
+    name: 'imageConverter',
+    category: 'images',
+    description: 'imageConverterDesc',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'imageSplit',
+    icon: LayoutGrid,
+    name: 'imageSplit',
+    category: 'images',
+    description: 'imageSplitDesc',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'generator',
+    icon: KeyRound,
+    name: 'generator',
+    category: 'common',
+    description: 'generatorDesc',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'pureBackground',
+    icon: Palette,
+    name: 'pureBackground',
+    category: 'common',
+    description: 'pureBackgroundDesc',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+
+  {
+    id: 'quadWallpaper',
+    icon: LayoutGrid,
+    name: 'quadWallpaper',
+    category: 'images',
+    description: 'quadWallpaperDesc',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'reviewGenerator',
+    icon: MessageSquare,
+    name: 'reviewGenerator',
+    category: 'text',
+    description: 'reviewGeneratorDesc',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'textTool',
+    icon: Type,
+    name: 'textTool',
+    category: 'text',
+    description: 'textToolDesc',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'textFormatter',
+    icon: Type,
+    name: 'textFormatter',
+    category: 'text',
+    description: 'textFormatterDesc',
+    component: lazy(() => import('../components/PlaceholderTool'))
   }
 ].filter(tool => !['readingRecord', 'blog', 'subscription'].includes(tool.id));
 
