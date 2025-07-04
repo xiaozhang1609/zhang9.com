@@ -12,14 +12,16 @@ interface ContactInfo {
 }
 
 const wechatContacts: ContactInfo[] = [
-  { type: "wechat", id: "xiaozhang1609", image: "/weixin_xiaozhang1609.webp", label: "微信客服1" },
-  { type: "wechat", id: "xiaozhang4096", image: "/weixin_xiaozhang4096.webp", label: "微信客服2" },
-  { type: "wechat", id: "xiaozhang5029", image: "/weixin_xiaozhang5029.webp", label: "微信客服3" },
+  //{ type: "wechat", id: "xiaozhang1609", image: "/weixin_xiaozhang1609.webp", label: "微信客服1" },
+  //{ type: "wechat", id: "xiaozhang4096", image: "/weixin_xiaozhang4096.webp", label: "微信客服2" },
+  //{ type: "wechat", id: "xiaozhang5029", image: "/weixin_xiaozhang5029.webp", label: "微信客服3" },
+  { type: "wechat", id: "QZY786786", image: "/weixin_QZY78678678.webp", label: "微信客服4" },
 ]
 
 const qqContacts: ContactInfo[] = [
-  { type: "qq", id: "2071006954", image: "/qq_2071006954.webp", label: "QQ客服1" },
-  { type: "qq", id: "2275808937", image: "/qq_2275808937.webp", label: "QQ客服2" },
+  //{ type: "qq", id: "2071006954", image: "/qq_2071006954.webp", label: "QQ客服1" },
+  //{ type: "qq", id: "2275808937", image: "/qq_2275808937.webp", label: "QQ客服2" },
+  { type: "qq", id: "429196871", image: "/qq_429196871.webp", label: "QQ客服3" },
 ]
 
 export default function ComputerRepair() {
