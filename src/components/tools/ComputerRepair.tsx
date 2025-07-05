@@ -17,6 +17,7 @@ const wechatContacts: ContactInfo[] = [
   //{ type: "wechat", id: "xiaozhang5029", image: "/weixin_xiaozhang5029.webp", label: "微信客服3" },
   //{ type: "wechat", id: "xiaozhang8192", image: "/weixin_xiaozhang8192.webp", label: "微信客服4" },
   { type: "wechat", id: "QZY786786", image: "/weixin_QZY78678678.webp", label: "微信客服5" },
+  { type: "wechat", id: "TXZ77886", image: "/weixin_TXZ77886.webp", label: "微信客服6" },
 ]
 
 const qqContacts: ContactInfo[] = [
