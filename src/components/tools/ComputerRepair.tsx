@@ -12,84 +12,35 @@ interface ContactInfo {
 }
 
 const wechatContacts: ContactInfo[] = [
-  //{ type: "wechat", id: "xiaozhang1609", image: "/weixin_xiaozhang1609.webp", label: "微信客服1" },
-  //{ type: "wechat", id: "xiaozhang4096", image: "/weixin_xiaozhang4096.webp", label: "微信客服2" },
+  { type: "wechat", id: "xiaozhang1609", image: "/weixin_xiaozhang1609.webp", label: "微信客服1" },
+  { type: "wechat", id: "xiaozhang4096", image: "/weixin_xiaozhang4096.webp", label: "微信客服2" },
   //{ type: "wechat", id: "xiaozhang5029", image: "/weixin_xiaozhang5029.webp", label: "微信客服3" },
-  { type: "wechat", id: "QZY786786", image: "/weixin_QZY78678678.webp", label: "微信客服4" },
+  //{ type: "wechat", id: "xiaozhang8192", image: "/weixin_xiaozhang8192.webp", label: "微信客服4" },
+  { type: "wechat", id: "QZY786786", image: "/weixin_QZY78678678.webp", label: "微信客服5" },
 ]
 
 const qqContacts: ContactInfo[] = [
-  //{ type: "qq", id: "2071006954", image: "/qq_2071006954.webp", label: "QQ客服1" },
+  { type: "qq", id: "2071006954", image: "/qq_2071006954.webp", label: "QQ客服1" },
   //{ type: "qq", id: "2275808937", image: "/qq_2275808937.webp", label: "QQ客服2" },
   { type: "qq", id: "429196871", image: "/qq_429196871.webp", label: "QQ客服3" },
 ]
 
 export default function ComputerRepair() {
-  // 基于时间戳设置初始索引，实现自然分流
+  // 随机设置初始索引，每次刷新页面时随机显示
   const [wechatIndex, setWechatIndex] = useState(() => {
-    // 获取当前时间戳并对联系人数量取模，得到一个0到联系人数量-1之间的值
-    return Math.floor(Date.now() / 10000) % wechatContacts.length
+    // 随机生成一个0到联系人数量-1之间的值
+    return Math.floor(Math.random() * wechatContacts.length)
   })
   
   const [qqIndex, setQqIndex] = useState(() => {
-    // 对QQ联系人使用稍微不同的计算，避免与微信完全同步
-    return Math.floor((Date.now() + 5000) / 10000) % qqContacts.length
+    // 随机生成一个0到联系人数量-1之间的值
+    return Math.floor(Math.random() * qqContacts.length)
   })
   
   const [copiedWechat, setCopiedWechat] = useState(false)
   const [copiedQQ, setCopiedQQ] = useState(false)
-  const [wechatIntervalId, setWechatIntervalId] = useState<NodeJS.Timeout | null>(null)
-  const [qqIntervalId, setQqIntervalId] = useState<NodeJS.Timeout | null>(null)
 
-  useEffect(() => {
-    // 计算到下一个10秒时间点的毫秒数
-    const now = Date.now()
-    const nextInterval = 10000 - (now % 10000)
-    
-    // 首次延迟到下一个10秒时间点
-    const initialTimeout = setTimeout(() => {
-      // 更新索引
-      setWechatIndex((prev) => (prev + 1) % wechatContacts.length)
-      
-      // 然后设置固定的10秒间隔
-      const interval = setInterval(() => {
-        setWechatIndex((prev) => (prev + 1) % wechatContacts.length)
-      }, 10000)
-      
-      // 保存interval ID以便清理
-      setWechatIntervalId(interval)
-    }, nextInterval)
-    
-    return () => {
-      clearTimeout(initialTimeout)
-      if (wechatIntervalId) clearInterval(wechatIntervalId)
-    }
-  }, [])
-
-  useEffect(() => {
-    // 计算到下一个10秒时间点的毫秒数，但错开5秒
-    const now = Date.now()
-    const nextInterval = 10000 - ((now + 5000) % 10000)
-    
-    // 首次延迟到下一个时间点
-    const initialTimeout = setTimeout(() => {
-      // 更新索引
-      setQqIndex((prev) => (prev + 1) % qqContacts.length)
-      
-      // 然后设置固定的10秒间隔
-      const interval = setInterval(() => {
-        setQqIndex((prev) => (prev + 1) % qqContacts.length)
-      }, 10000)
-      
-      // 保存interval ID以便清理
-      setQqIntervalId(interval)
-    }, nextInterval)
-    
-    return () => {
-      clearTimeout(initialTimeout)
-      if (qqIntervalId) clearInterval(qqIntervalId)
-    }
-  }, [])
+  // 移除了轮询逻辑，每次刷新页面时随机显示二维码
 
   const currentWechat = wechatContacts[wechatIndex]
   const currentQQ = qqContacts[qqIndex]
