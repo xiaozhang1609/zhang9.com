@@ -13,7 +13,7 @@ interface ContactInfo {
 
 const wechatContacts: ContactInfo[] = [
   //{ type: "wechat", id: "xiaozhang1609", image: "/weixin_xiaozhang1609.webp", label: "微信客服1" },
-  { type: "wechat", id: "xiaozhang4096", image: "/weixin_xiaozhang4096.webp", label: "微信客服2" },
+  //{ type: "wechat", id: "xiaozhang4096", image: "/weixin_xiaozhang4096.webp", label: "微信客服2" },
   //{ type: "wechat", id: "xiaozhang5029", image: "/weixin_xiaozhang5029.webp", label: "微信客服3" },
   //{ type: "wechat", id: "xiaozhang8192", image: "/weixin_xiaozhang8192.webp", label: "微信客服4" },
   { type: "wechat", id: "QZY786786", image: "/weixin_QZY78678678.webp", label: "jie1" },
