@@ -55,6 +55,15 @@ export const toolsConfig: ToolConfig[] = [
     isNew: true // 标记为新功能
   },
   {
+    id: 'computerRepairGlobal',
+    icon: Wrench,
+    name: '电脑维修(海外)',
+    category: 'common',
+    description: 'computerRepairDesc',
+    component: lazy(() => import('../components/tools/ComputerRepairGlobal')),
+    isNew: true // 标记为新功能
+  },
+  {
     id: 'officialWebsiteSearch',
     icon: Hash,
     name: 'officialWebsiteSearch',
