@@ -73,7 +73,11 @@ export default function App() {
                   {(() => {
                     const tool = getToolById(activeTool);
                     if (!tool) return null;
-                    return React.createElement(tool.component);
+                    
+                    // 为组件传递handleToolChange函数
+                    return React.createElement(tool.component, {
+                      onToolChange: handleToolChange
+                    });
                   })()}
                 </Suspense>
               </motion.div>
