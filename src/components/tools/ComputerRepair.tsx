@@ -20,8 +20,8 @@ const wechatContacts: ContactInfo[] = [
   { type: "wechat", id: "TXZ77886", image: "/weixin_TXZ77886.webp", label: "jie2" },
   //{ type: "wechat", id: "git_david", image: "/weixin_git_david.webp", label: "david" },
   { type: "wechat", id: "ZYD-xiaoyudian-0909", image: "/weixin_ZYD-xiaoyudian-0909.webp", label: "wangyan" },
-  { type: "wechat", id: "zb15349507383", image: "/weixin_zb15349507383.webp", label: "zhangb" },
-  ////{ type: "wechat", id: "zb---qq238349", image: "/weixin_zb---qq238349.webp", label: "xiaoping" },
+  //{ type: "wechat", id: "zb15349507383", image: "/weixin_zb15349507383.webp", label: "zhangb" },
+  { type: "wechat", id: "zb---qq238349", image: "/weixin_zb---qq238349.webp", label: "zhangb2" },
 ]
 
 const qqContacts: ContactInfo[] = [
