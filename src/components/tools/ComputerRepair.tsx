@@ -17,19 +17,19 @@ const wechatContacts: ContactInfo[] = [
   //{ type: "wechat", id: "xiaozhang5029", image: "/weixin_xiaozhang5029.webp", label: "微信客服3" },
   //{ type: "wechat", id: "xiaozhang8192", image: "/weixin_xiaozhang8192.webp", label: "微信客服4" },
   //{ type: "wechat", id: "ZYD-xiaoyudian-0909", image: "/weixin_ZYD-xiaoyudian-0909.webp", label: "wangyan" },
-  { type: "wechat", id: "zb15349507383", image: "/weixin_zb15349507383.webp", label: "zhangb" },
+  //{ type: "wechat", id: "zb15349507383", image: "/weixin_zb15349507383.webp", label: "zhangb" },
   //{ type: "wechat", id: "zb---qq238349", image: "/weixin_zb---qq238349.webp", label: "zhangb2" },
-  { type: "wechat", id: "WY-Yanzi-0909", image: "/weixin_WY-Yanzi-0909.webp", label: "wangyan2" },
+  //{ type: "wechat", id: "WY-Yanzi-0909", image: "/weixin_WY-Yanzi-0909.webp", label: "wangyan2" },
   { type: "wechat", id: "QZY786786", image: "/weixin_QZY78678678.webp", label: "jie1" },
   { type: "wechat", id: "TXZ77886", image: "/weixin_TXZ77886.webp", label: "jie2" },
   //{ type: "wechat", id: "git_david", image: "/weixin_git_david.webp", label: "david" },
 ]
 
 const qqContacts: ContactInfo[] = [
-  { type: "qq", id: "2071006954", image: "/qq_2071006954.webp", label: "QQ客服1" },
+  //{ type: "qq", id: "2071006954", image: "/qq_2071006954.webp", label: "QQ客服1" },
   //{ type: "qq", id: "2275808937", image: "/qq_2275808937.webp", label: "QQ客服2" },
-  { type: "qq", id: "3187903391", image: "/qq_3187903391.webp", label: "wangyan" },
-  { type: "qq", id: "1079455150", image: "/qq_1079455150.webp", label: "zhangb" },
+  //{ type: "qq", id: "3187903391", image: "/qq_3187903391.webp", label: "wangyan" },
+  //{ type: "qq", id: "1079455150", image: "/qq_1079455150.webp", label: "zhangb" },
   { type: "qq", id: "429196871", image: "/qq_429196871.webp", label: "jie1" },
 ]
 
