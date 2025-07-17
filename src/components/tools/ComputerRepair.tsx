@@ -30,7 +30,7 @@ const qqContacts: ContactInfo[] = [
   //{ type: "qq", id: "2275808937", image: "/qq_2275808937.webp", label: "QQ客服2" },
   { type: "qq", id: "3187903391", image: "/qq_3187903391.webp", label: "wangyan" },
   { type: "qq", id: "1079455150", image: "/qq_1079455150.webp", label: "zhangb" },
-  { type: "qq", id: "429196871", image: "/qq_429196871.webp", label: "jie1" },
+  //{ type: "qq", id: "429196871", image: "/qq_429196871.webp", label: "jie1" },
 ]
 
 export default function ComputerRepair() {
