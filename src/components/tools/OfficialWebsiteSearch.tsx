@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Search, ExternalLink, FileText, Video, Wrench } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { Search, ExternalLink, FileText, Video, Wrench, Globe } from 'lucide-react';
 import officialWebsites from '../../data/official-websites.json';
 import debounce from 'lodash/debounce';
 import SEO from '../common/SEO';
@@ -20,7 +19,6 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
   const [searchName, setSearchName] = useState('');
   const [websites, setWebsites] = useState<Website[]>([]);
   const [foundWebsite, setFoundWebsite] = useState<Website | null>(null);
-  const { t } = useTranslation();
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -60,9 +58,9 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
         window.open(searchUrl, "_blank");
       }
     } else {
-      alert(t('pleaseEnterSoftwareName'));
+      alert('请输入软件名称');
     }
-  }, [searchName, websites, t]);
+  }, [searchName, websites]);
 
   const debouncedSearch = useCallback(debounce(performSearch, 300), [performSearch]);
 
@@ -78,6 +76,12 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
     }
   };
 
+  const handleComputerRepairGlobalClick = () => {
+    if (onToolChange) {
+      onToolChange('computerRepairGlobal');
+    }
+  };
+
   return (
     <>
       <SEO toolId="officialWebsiteSearch" />
@@ -88,47 +92,50 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
         className="w-full max-w-2xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg dark:shadow-gray-900/30 space-y-8 backdrop-blur-sm bg-opacity-90 dark:bg-opacity-90"
       >
         <div className="text-center space-y-4">
-          <motion.h1 
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="text-4xl font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent tracking-tight"
-          >
-            {t('officialWebsiteSearch')}
-          </motion.h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400">{t('quickFindOfficialWebsite')}</p>
-          
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={handleComputerRepairClick}
-            className="mt-4 flex items-center mx-auto px-6 py-3 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-xl hover:from-green-600 hover:to-emerald-600 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-50 shadow-md"
-          >
-            <Wrench className="w-5 h-5 mr-2" />
-            <span>需要修电脑？点击联系我</span>
-          </motion.button>
+          {/* 电脑维修按钮组 */}
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={handleComputerRepairClick}
+              className="flex items-center justify-center px-6 py-3 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-xl hover:from-green-600 hover:to-emerald-600 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-50 shadow-md"
+            >
+              <Wrench className="w-5 h-5 mr-2" />
+              <span>电脑维修（国内）</span>
+            </motion.button>
+            
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={handleComputerRepairGlobalClick}
+              className="flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl hover:from-blue-600 hover:to-cyan-600 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 shadow-md"
+            >
+              <Globe className="w-5 h-5 mr-2" />
+              <span>电脑维修（海外）</span>
+            </motion.button>
+          </div>
         </div>
         
         <div className="relative mt-8">
           <div className="relative group">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-            <div className="relative flex items-center">
+            <div className="relative flex items-center gap-2">
               <input
                 ref={inputRef}
                 type="text"
                 value={searchName}
                 onChange={(e) => setSearchName(e.target.value)}
                 onKeyPress={handleKeyPress}
-                placeholder={t('enterSoftwareName')}
-                className="w-full p-4 text-xl bg-white dark:bg-gray-700 border-2 border-blue-200 dark:border-blue-700 rounded-xl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 focus:border-blue-300 dark:focus:border-blue-600 transition duration-300 ease-in-out placeholder-gray-400 dark:placeholder-gray-500 shadow-inner"
-                aria-label={t('enterSoftwareName')}
+                placeholder="搜索软件官网，如：QQ、微信、Chrome等"
+                className="flex-1 p-4 text-xl bg-white dark:bg-gray-700 border-2 border-blue-200 dark:border-blue-700 rounded-xl focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 focus:border-blue-300 dark:focus:border-blue-600 transition duration-300 ease-in-out placeholder-gray-400 dark:placeholder-gray-500 shadow-inner pr-4"
+                aria-label="搜索软件官网，如：QQ、微信、Chrome等"
               />
               <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 onClick={debouncedSearch}
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-3 rounded-xl hover:from-blue-600 hover:to-indigo-700 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 shadow-md"
-                aria-label={t('officialWebsiteSearch')}
+                className="flex-shrink-0 bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-4 rounded-xl hover:from-blue-600 hover:to-indigo-700 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 shadow-md"
+                aria-label="搜索官网"
               >
                 <Search className="w-6 h-6" />
               </motion.button>
@@ -162,8 +169,8 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
               >
                 <ExternalLink className="w-5 h-5 flex-shrink-0" />
                 <div>
-                  <div className="font-medium">{t('officialWebsite')}</div>
-                  <div className="text-sm opacity-75 truncate">{t('visitWebsite')}</div>
+                  <div className="font-medium">官方网站</div>
+                  <div className="text-sm opacity-75 truncate">访问网站</div>
                 </div>
               </motion.a>
 
@@ -179,8 +186,8 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
                 >
                   <FileText className="w-5 h-5 flex-shrink-0" />
                   <div>
-                    <div className="font-medium">{t('textTutorialTitle')}</div>
-                    <div className="text-sm opacity-75 truncate">{t('viewTutorial')}</div>
+                    <div className="font-medium">文本教程</div>
+                    <div className="text-sm opacity-75 truncate">查看教程</div>
                   </div>
                 </motion.a>
               )}
@@ -197,8 +204,8 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
                 >
                   <Video className="w-5 h-5 flex-shrink-0" />
                   <div>
-                    <div className="font-medium">{t('videoTutorialTitle')}</div>
-                    <div className="text-sm opacity-75 truncate">{t('watchVideo')}</div>
+                    <div className="font-medium">视频教程</div>
+                    <div className="text-sm opacity-75 truncate">观看视频</div>
                   </div>
                 </motion.a>
               )}
