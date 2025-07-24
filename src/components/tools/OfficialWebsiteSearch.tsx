@@ -100,7 +100,6 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
               onClick={handleComputerRepairClick}
               className="flex items-center justify-center px-6 py-3 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-xl hover:from-green-600 hover:to-emerald-600 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-50 shadow-md"
             >
-              <Wrench className="w-5 h-5 mr-2" />
               <span>电脑维修（国内）</span>
             </motion.button>
             
@@ -110,7 +109,6 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
               onClick={handleComputerRepairGlobalClick}
               className="flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-xl hover:from-blue-600 hover:to-cyan-600 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 shadow-md"
             >
-              <Globe className="w-5 h-5 mr-2" />
               <span>电脑维修（海外）</span>
             </motion.button>
           </div>
