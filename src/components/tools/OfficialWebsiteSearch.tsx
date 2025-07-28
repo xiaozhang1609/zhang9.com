@@ -15,6 +15,12 @@ interface Website {
   videoTutorial: string | null;
 }
 
+const TIME_CONFIG = {
+  WORK_START_HOUR: 6,
+  WORK_END_HOUR: 21,
+  TIMEZONE: 'Asia/Shanghai'
+} as const;
+
 export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?: (toolId: string) => void }) {
   const [searchName, setSearchName] = useState('');
   const [websites, setWebsites] = useState<Website[]>([]);
@@ -33,13 +39,21 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
     setWebsites(allWebsites);
   }, []);
 
-  // 获取北京时间并判断是否为工作时间（6:00-22:00）
   const isWorkingHours = (): boolean => {
-    const beijingTime = new Date().toLocaleString("en-US", {
-      timeZone: "Asia/Shanghai"
-    });
-    const currentHour = new Date(beijingTime).getHours();
-    return currentHour >= 6 && currentHour <= 22;
+    try {
+      const beijingTime = new Date().toLocaleString("en-US", {
+        timeZone: TIME_CONFIG.TIMEZONE
+      });
+      const currentHour = new Date(beijingTime).getHours();
+      
+      if (TIME_CONFIG.WORK_START_HOUR <= TIME_CONFIG.WORK_END_HOUR) {
+        return currentHour >= TIME_CONFIG.WORK_START_HOUR && currentHour <= TIME_CONFIG.WORK_END_HOUR;
+      } else {
+        return currentHour >= TIME_CONFIG.WORK_START_HOUR || currentHour <= TIME_CONFIG.WORK_END_HOUR;
+      }
+    } catch (error) {
+      return true;
+    }
   };
 
   const generateSearchQuery = (softwareName: string) => {
@@ -109,7 +123,6 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
         className="w-full max-w-2xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg dark:shadow-gray-900/30 space-y-8 backdrop-blur-sm bg-opacity-90 dark:bg-opacity-90"
       >
         <div className="text-center space-y-4">
-          {/* 电脑维修按钮组 */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -165,15 +178,12 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-8 overflow-hidden bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700"
           >
-            {/* 软件信息头部 */}
             <div className="p-6 border-b border-gray-100 dark:border-gray-700 bg-gradient-to-r from-gray-50 to-white dark:from-gray-800 dark:to-gray-750">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white">{foundWebsite.name}</h2>
               <p className="mt-2 text-gray-600 dark:text-gray-300">{foundWebsite.description}</p>
             </div>
 
-            {/* 链接区域 */}
             <div className="p-6 grid gap-4 sm:grid-cols-3">
-              {/* 官方网站 */}
               <motion.a
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
@@ -189,7 +199,6 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
                 </div>
               </motion.a>
 
-              {/* 文字教程 */}
               {foundWebsite.textTutorial && (
                 <motion.a
                   whileHover={{ scale: 1.03 }}
@@ -207,7 +216,6 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
                 </motion.a>
               )}
 
-              {/* 视频教程 */}
               {foundWebsite.videoTutorial && (
                 <motion.a
                   whileHover={{ scale: 1.03 }}
