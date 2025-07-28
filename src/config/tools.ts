@@ -14,7 +14,7 @@ import {
   LayoutGrid,
   Info,
   Link,
-  Monitor, // 添加新图标
+  Monitor,
   Wrench
 } from 'lucide-react';
 
@@ -25,6 +25,7 @@ export interface ToolConfig {
   category: keyof typeof categories;
   description: string;
   component: React.LazyExoticComponent<any>;
+  isNew?: boolean;
 }
 
 export const categories = {
@@ -34,49 +35,46 @@ export const categories = {
   games: '小游戏'
 } as const;
 
-export interface ToolConfig {
-  id: string;
-  icon: any;
-  name: string;
-  category: keyof typeof categories;
-  description: string;
-  component: React.LazyExoticComponent<any>;
-  isNew?: boolean; // 添加新属性标记新功能
-}
-
 export const toolsConfig: ToolConfig[] = [
   {
     id: 'computerRepair',
     icon: Wrench,
-    name: 'computerRepair',
+    name: '电脑维修',
     category: 'common',
-    description: 'computerRepairDesc',
+    description: '电脑维修联系方式',
     component: lazy(() => import('../components/tools/ComputerRepair')),
-    isNew: true // 标记为新功能
+    isNew: true
   },
   {
     id: 'computerRepairGlobal',
     icon: Wrench,
     name: '电脑维修(海外)',
     category: 'common',
-    description: 'computerRepairDesc',
-    component: lazy(() => import('../components/tools/ComputerRepairGlobal')),
-    isNew: true // 标记为新功能
+    description: '海外电脑维修服务',
+    component: lazy(() => import('../components/tools/ComputerRepairGlobal'))
+  },
+  {
+    id: 'computerRepairNight',
+    icon: Wrench,
+    name: '电脑维修(夜间)',
+    category: 'common',
+    description: '夜间电脑维修服务，通过淘宝店铺下单',
+    component: lazy(() => import('../components/tools/ComputerRepairNight'))
   },
   {
     id: 'officialWebsiteSearch',
     icon: Hash,
-    name: 'officialWebsiteSearch',
+    name: '官网查询',
     category: 'common',
-    description: 'officialWebsiteSearchDesc',
+    description: '快速找到软件官方网站',
     component: lazy(() => import('../components/tools/OfficialWebsiteSearch'))
   },
   {
     id: 'quickLinks',
     icon: Link,
-    name: 'quickLinks',
+    name: '快捷导航',
     category: 'common',
-    description: 'quickLinksDesc',
+    description: '精选实用网站导航',
     component: lazy(() => import('../components/tools/quickLinks'))
   },
   {
@@ -84,97 +82,95 @@ export const toolsConfig: ToolConfig[] = [
     icon: Monitor,
     name: '镜像下载',
     category: 'common',
-    description: 'winmirrorDesc',
+    description: 'Windows系统镜像下载',
     component: lazy(() => import('../components/tools/WinMirror'))
   },
-
   {
     id: 'fileTree',
     icon: FolderTree,
-    name: 'fileTree',
+    name: '文件目录',
     category: 'common',
-    description: 'fileTreeDesc',
+    description: '生成文件目录树结构',
     component: lazy(() => import('../components/PlaceholderTool'))
   },
   {
     id: 'game2048',
     icon: Gamepad2,
-    name: 'game2048',
+    name: '数字游戏',
     category: 'games',
-    description: 'game2048Desc',
+    description: '经典的2048小游戏',
     component: lazy(() => import('../components/PlaceholderTool'))
   },
   {
     id: 'imageCompress',
     icon: Image,
-    name: 'imageCompress',
+    name: '图片压缩',
     category: 'images',
-    description: 'imageCompressDesc',
+    description: '图片压缩工具，支持批量处理',
     component: lazy(() => import('../components/PlaceholderTool'))
   },
   {
     id: 'imageConverter',
     icon: Image,
-    name: 'imageConverter',
+    name: '格式转换',
     category: 'images',
-    description: 'imageConverterDesc',
+    description: '图片格式转换工具',
     component: lazy(() => import('../components/PlaceholderTool'))
   },
   {
     id: 'imageSplit',
     icon: LayoutGrid,
-    name: 'imageSplit',
+    name: '图片分割',
     category: 'images',
-    description: 'imageSplitDesc',
+    description: '图片分割工具',
     component: lazy(() => import('../components/PlaceholderTool'))
   },
   {
     id: 'generator',
     icon: KeyRound,
-    name: 'generator',
+    name: '密码生成',
     category: 'common',
-    description: 'generatorDesc',
+    description: '随机生成名称或密码',
     component: lazy(() => import('../components/PlaceholderTool'))
   },
   {
     id: 'pureBackground',
     icon: Palette,
-    name: 'pureBackground',
+    name: '纯色背景',
     category: 'common',
-    description: 'pureBackgroundDesc',
+    description: '生成纯色背景图片',
     component: lazy(() => import('../components/PlaceholderTool'))
   },
-
   {
     id: 'quadWallpaper',
     icon: LayoutGrid,
-    name: 'quadWallpaper',
+    name: '四屏壁纸',
     category: 'images',
-    description: 'quadWallpaperDesc',
+    description: '创建四分屏壁纸',
     component: lazy(() => import('../components/PlaceholderTool'))
   },
   {
     id: 'reviewGenerator',
     icon: MessageSquare,
-    name: 'reviewGenerator',
+    name: '评价生成',
     category: 'text',
-    description: 'reviewGeneratorDesc',
+    description: '快速生成评论文本',
     component: lazy(() => import('../components/PlaceholderTool'))
   },
   {
     id: 'textTool',
     icon: Type,
-    name: 'textTool',
+    name: '文本统计',
     category: 'text',
-    description: 'textToolDesc',
+    description: '文本字数统计工具',
     component: lazy(() => import('../components/PlaceholderTool'))
   },
   {
     id: 'textFormatter',
     icon: Type,
-    name: 'textFormatter',
+    name: '文本排版',
     category: 'text',
-    description: 'textFormatterDesc',
+    description: '快速规范化文本排版格式',
     component: lazy(() => import('../components/PlaceholderTool'))
   }
 ].filter(tool => !['readingRecord', 'blog', 'subscription'].includes(tool.id));
@@ -183,8 +179,8 @@ export const toolsConfig: ToolConfig[] = [
 export const aboutConfig = {
   id: 'about',
   icon: Info,
-  name: 'about',
-  description: 'aboutDescription',
+  name: '关于',
+  description: '关于章九工具箱',
   component: lazy(() => import('../components/About'))
 };
 

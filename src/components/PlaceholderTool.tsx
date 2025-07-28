@@ -1,11 +1,8 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import { Construction, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function PlaceholderTool() {
-  const { t } = useTranslation();
-
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}

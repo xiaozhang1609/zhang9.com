@@ -1,24 +1,21 @@
-import { useTranslation } from 'react-i18next';
 import { SiBilibili } from 'react-icons/si';
 import { FaYoutube } from 'react-icons/fa';
 import { Github } from 'lucide-react';
 
 export default function About() {
-  const { t } = useTranslation();
-
   return (
     <div className="w-full max-w-2xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg space-y-8">
       <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white">{t('about')}</h1>
+        <h1 className="text-4xl font-bold text-gray-900 dark:text-white">关于</h1>
         <p className="text-xl text-gray-600 dark:text-gray-400">
-          {t('aboutDescription')}
+          欢迎使用章九工具箱，这是一个免费的在线工具集合
         </p>
       </div>
 
       <div className="space-y-6">
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
-            {t('socialMedia')}
+            社交媒体
           </h2>
           <div className="flex flex-col space-y-4">
             <a
@@ -44,7 +41,7 @@ export default function About() {
 
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
-            {t('contact')}
+            联系方式
           </h2>
           <div className="flex flex-col space-y-4">
             <a

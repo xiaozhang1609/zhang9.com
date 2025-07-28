@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { categories, getToolsByCategory } from '../config/tools';
 
@@ -10,8 +9,6 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ isOpen, activeTool, onToolSelect, onHomeClick }: SidebarProps) {
-  const { t } = useTranslation();
-
   return (
     <motion.div
       initial={{ x: -280 }}
@@ -21,7 +18,7 @@ export default function Sidebar({ isOpen, activeTool, onToolSelect, onHomeClick 
       {/* 简化后的头部设计 */}
       <div className="p-6 border-b border-white/10">
         <motion.div 
-          className="flex items-center gap-6 cursor-pointer group" // 增加间距
+          className="flex items-center gap-6 cursor-pointer group"
           onClick={onHomeClick}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
@@ -29,22 +26,22 @@ export default function Sidebar({ isOpen, activeTool, onToolSelect, onHomeClick 
           {/* Logo容器 - 更大尺寸 */}
           <motion.div 
             whileHover={{ rotate: 5 }}
-            className="flex items-center justify-center" // 添加居中对齐
+            className="flex items-center justify-center"
           >
             <img 
               src="/favicon.svg" 
               alt="logo" 
-              className="w-12 h-12 transform group-hover:scale-110 transition-transform duration-300" // 增大到 12x12
+              className="w-12 h-12 transform group-hover:scale-110 transition-transform duration-300"
             />
           </motion.div>
 
           {/* 文字部分 */}
           <div className="transform group-hover:translate-x-1 transition-transform duration-300">
             <h1 className="text-2xl font-bold tracking-wide bg-gradient-to-r from-white to-white/90 bg-clip-text text-transparent">
-              {t('toolbox')}
+              章九工具箱
             </h1>
             <p className="text-sm text-indigo-200/90 font-medium mt-0.5">
-              {t('boostProductivity')}
+              提升您的工作效率
             </p>
           </div>
         </motion.div>
@@ -55,7 +52,7 @@ export default function Sidebar({ isOpen, activeTool, onToolSelect, onHomeClick 
           {Object.entries(categories).map(([category, label]) => (
             <div key={category} className="mb-6">
               <h3 className="px-4 text-xs font-medium text-indigo-300/70 uppercase tracking-wider mb-3">
-                {t(label)}
+                {label}
               </h3>
               <div className="space-y-1">
                 {getToolsByCategory(category as keyof typeof categories).map(tool => (
@@ -72,7 +69,7 @@ export default function Sidebar({ isOpen, activeTool, onToolSelect, onHomeClick 
                   >
                     <tool.icon className={`w-5 h-5 ${activeTool === tool.id ? 'text-indigo-400' : tool.isNew ? 'text-amber-400' : ''}`} />
                     <div className="flex items-center">
-                      <span>{t(tool.name)}</span>
+                      <span>{tool.name}</span>
                       {tool.isNew && (
                         <span className="ml-2 px-1.5 py-0.5 text-[10px] bg-amber-500 text-white rounded-full animate-pulse">
                           NEW
@@ -86,8 +83,6 @@ export default function Sidebar({ isOpen, activeTool, onToolSelect, onHomeClick 
           ))}
         </div>
       </div>
-
-      {/* 底部区域已移除 */}
     </motion.div>
   );
 }

@@ -5,7 +5,6 @@ import Header from './components/Header';
 import LoadingSpinner from './components/common/LoadingSpinner';
 import ErrorBoundary from './components/common/ErrorBoundary';
 import { getToolById } from './config/tools';
-import './i18n';
 
 export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

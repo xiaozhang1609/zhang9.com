@@ -33,6 +33,15 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
     setWebsites(allWebsites);
   }, []);
 
+  // 获取北京时间并判断是否为工作时间（6:00-22:00）
+  const isWorkingHours = (): boolean => {
+    const beijingTime = new Date().toLocaleString("en-US", {
+      timeZone: "Asia/Shanghai"
+    });
+    const currentHour = new Date(beijingTime).getHours();
+    return currentHour >= 6 && currentHour <= 22;
+  };
+
   const generateSearchQuery = (softwareName: string) => {
     const positiveKeywords = ["官方网站", "官网", "官方"];
     return `"${softwareName}" ${positiveKeywords.join(" ")}`;
@@ -72,13 +81,21 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
 
   const handleComputerRepairClick = () => {
     if (onToolChange) {
-      onToolChange('computerRepair');
+      if (isWorkingHours()) {
+        onToolChange('computerRepair');
+      } else {
+        onToolChange('computerRepairNight');
+      }
     }
   };
 
   const handleComputerRepairGlobalClick = () => {
     if (onToolChange) {
-      onToolChange('computerRepairGlobal');
+      if (isWorkingHours()) {
+        onToolChange('computerRepairGlobal');
+      } else {
+        onToolChange('computerRepairNight');
+      }
     }
   };
 

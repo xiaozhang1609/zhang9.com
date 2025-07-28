@@ -1,75 +1,50 @@
-# 章九工具箱
+# 章九工具箱 (Zhang9 Toolbox)
 
-一个免费的在线工具集合，提供多种实用的小工具，帮助提升工作效率。
+一个现代化的在线工具集合，提供各种实用的日常工具。
 
-[English Version](#english-version)
-
-## ✨ 特性
+## ✨ 功能特点
 
 - 🛠️ 丰富的工具集合
-  - 图片工具（压缩、格式转换、分割、去除背景等）
-  - 文本工具（字数统计、文本排版、OCR识别等）
-  - 二维码工具（生成与扫描）
-  - 实用工具（文件树生成、名称生成器、计时器等）
-  - 软件官网查询（避免下载盗版软件）
-  - 休闲工具（2048游戏、倒计时、番茄钟等）
+  - 官网查询工具
+  - 电脑维修服务
+  - 快捷导航
+  - Windows镜像下载
+  - 图片处理工具
+  - 文本处理工具
+  - 娱乐工具 (2048游戏等)
 
 - 🎨 现代化界面
-  - 响应式设计，适配多端
+  - 响应式设计，适配所有设备
   - 深色模式支持
   - 流畅的动画效果
-  - 简洁直观的操作界面
+  - 简洁直观的用户界面
 
-- 🌍 多语言支持
-  - 中文
-  - English
+- ⚡ 技术亮点
+  - 基于 React + TypeScript 构建
+  - 使用 TailwindCSS 样式
+  - Framer Motion 动画
+  - PWA 支持
 
-- ⚡ 技术特点
-  - React + TypeScript 构建
-  - TailwindCSS 实现样式
-  - Framer Motion 提供动画
-  - i18next 支持国际化
-  - 支持 PWA
+## 🌐 在线演示
 
-## 🌐 在线体验
+访问: [https://zhang9.com](https://zhang9.com/)
 
-访问：[https://zhang9.com](https://zhang9.com)
+## 🚀 本地开发
 
----
+```bash
+# 克隆项目
+git clone https://github.com/your-username/zhang9-toolbox.git
 
-# English Version
+# 安装依赖
+npm install
 
-# 章九工具箱
+# 启动开发服务器
+npm run dev
 
-A free online toolbox collection designed to boost your productivity.
+# 构建生产版本
+npm run build
+```
 
-## ✨ Features
+## 📝 许可证
 
-- 🛠️ Rich Tool Collection
-  - Image Tools (Compression, Format Conversion, Split, Background Removal)
-  - Text Tools (Word Count, Text Formatting, OCR Recognition)
-  - QR Code Tools (Generation & Scanning)
-  - Utility Tools (File Tree Generator, Name Generator, Timer)
-  - Software Official Website Search
-  - Entertainment Tools (2048 Game, Countdown, Pomodoro Timer)
-
-- 🎨 Modern Interface
-  - Responsive Design for All Devices
-  - Dark Mode Support
-  - Smooth Animations
-  - Clean & Intuitive UI
-
-- 🌍 Multi-language Support
-  - Chinese
-  - English
-
-- ⚡ Technical Highlights
-  - Built with React + TypeScript
-  - Styled using TailwindCSS
-  - Animations with Framer Motion
-  - i18next for Internationalization
-  - PWA Support
-
-## 🌐 Online Demo
-
-Visit: [https://zhang9.com](https://zhang9.com/)
+MIT License
