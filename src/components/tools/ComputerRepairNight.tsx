@@ -79,7 +79,7 @@ export default function ComputerRepairNight() {
             className="mb-10"
           >
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-3 tracking-wide">
-              夜间维修服务
+              电脑维修服务
             </h1>
             <div className="w-24 h-1 bg-gray-800 dark:bg-gray-300 mx-auto rounded-full"></div>
           </motion.div>
@@ -120,7 +120,7 @@ export default function ComputerRepairNight() {
                 zhang9.taobao.com
               </p>
               <p className="text-xs text-gray-500 dark:text-gray-500">
-                工作时间 06:00 - 22:00
+                海外客户请发送您的微信到 xiaozhang.tech@hotmail.com 
               </p>
             </div>
           </motion.div>
