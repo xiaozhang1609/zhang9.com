@@ -105,11 +105,7 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
 
   const handleComputerRepairGlobalClick = () => {
     if (onToolChange) {
-      if (isWorkingHours()) {
-        onToolChange('computerRepairGlobal');
-      } else {
-        onToolChange('computerRepairNight');
-      }
+      onToolChange('computerRepairGlobal');
     }
   };
 
