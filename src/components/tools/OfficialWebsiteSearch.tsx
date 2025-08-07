@@ -17,7 +17,7 @@ interface Website {
 
 const TIME_CONFIG = {
   WORK_START_HOUR: 4,
-  WORK_END_HOUR: 5,
+  WORK_END_HOUR: 3,
   TIMEZONE: 'Asia/Shanghai'
 } as const;
 
