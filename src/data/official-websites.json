@@ -722,6 +722,15 @@
       "alias": ["腾讯管家", "电脑管家", "Tencent PC Manager"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c67",
+      "name": "美化",
+      "description": "Windows桌面美化教程",
+      "link": "https://itxiaozhang.com/windows-desktop-customization-translucenttb-nexus-rainmeter",
+      "alias": ["美化", "mh"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }
