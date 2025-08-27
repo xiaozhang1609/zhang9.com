@@ -18,7 +18,7 @@ const wechatContacts: ContactInfo[] = [
   { type: "wechat", id: "xiaozhang8192", image: "/weixin_xiaozhang8192.webp", label: "微信客服4-二" },
   { type: "wechat", id: "ZYD-xiaoyudian-0909", image: "/weixin_ZYD-xiaoyudian-0909.webp", label: "wangyan-六" },
   { type: "wechat", id: "WY-Yanzi-0909", image: "/weixin_WY-Yanzi-0909.webp", label: "wangyan2-锤" },
-  //{ type: "wechat", id: "dabing9248", image: "/weixin_dabing9248.webp", label: "zhangb-四" },
+  { type: "wechat", id: "dabing9248", image: "/weixin_dabing9248.webp", label: "zhangb-四" },
   { type: "wechat", id: "zb---qq238349", image: "/weixin_zb---qq238349.webp", label: "zhangb2-兵" },
   //{ type: "wechat", id: "dabing9999", image: "/weixin_dabing9999.webp", label: "dabing" },
   //{ type: "wechat", id: "QZY786786", image: "/weixin_QZY786786.webp", label: "jie1" },
