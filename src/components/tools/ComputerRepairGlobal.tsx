@@ -144,6 +144,34 @@ export default function ComputerRepairGlobal() {
                 下载UU远程
               </a>
             </div>
+            
+            {/* 投诉电话区域 */}
+            <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="flex items-center space-x-2 text-red-600 dark:text-red-400">
+                  <span className="text-base">📞</span>
+                  <span className="font-medium">服务投诉热线</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="text-gray-700 dark:text-gray-300 font-mono text-lg tracking-wider">
+                    <span style={{unicodeBidi: 'bidi-override', direction: 'ltr'}}>1</span>
+                    <span className="mx-1">8</span>
+                    <span style={{transform: 'rotate(0deg)', display: 'inline-block'}}>6</span>
+                    <span>9</span>
+                    <span className="mx-0.5">5</span>
+                    <span>1</span>
+                    <span style={{letterSpacing: '1px'}}>4</span>
+                    <span>7</span>
+                    <span className="mx-0.5">1</span>
+                    <span>5</span>
+                    <span style={{opacity: 1}}>6</span>
+                  </span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400 ml-2">
+                    (工作时间: 9:00-22:00)
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
