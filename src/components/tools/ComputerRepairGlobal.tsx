@@ -128,7 +128,7 @@ export default function ComputerRepairGlobal() {
               </div>
 
               <a
-                href="https://uuyc.163.com/"
+                href="https://www.todesk.com/download.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
@@ -141,7 +141,7 @@ export default function ComputerRepairGlobal() {
                     d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                   />
                 </svg>
-                下载UU远程
+                下载ToDesk
               </a>
             </div>
             
