@@ -134,6 +134,15 @@
       "alias": ["ReNamer", "Re Namer"],
       "textTutorial": "https://itxiaozhang.com/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "r16",
+      "name": "SpaceSniffer",
+      "description": "免费磁盘空间分析工具",
+      "link": "https://dappcdn.com/download/disk-analyzers/spacesniffer",
+      "alias": ["SpaceSniffer", "Space Sniffer", "磁盘分析工具"],
+      "textTutorial": "https://itxiaozhang.com/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ],
   "常用软件": [
