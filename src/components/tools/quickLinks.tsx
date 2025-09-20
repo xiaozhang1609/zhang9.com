@@ -15,6 +15,7 @@ const links: QuickLink[] = [
   { title: '启动U盘', url: 'https://www.123pan.com/s/dptuVv-yfQW3.html', category: 'system' },
   { title: '驱动备用', url: 'https://www.123pan.com/s/dptuVv-jfQW3.html', category: 'system' },
   { title: '常用软件', url: 'https://www.123pan.com/s/dptuVv-baQW3.html', category: 'system' },
+  { title: '桌面美化', url: 'https://v0-wallpaper-viewer-app.vercel.app/', category: 'system' },
   { title: '24小时后删除', url: 'https://www.123912.com/s/dptuVv-7VEW3', category: 'system' },
   { title: '临时文件分享', url: 'https://www.wenshushu.cn/', category: 'system' },
   { title: '镜像下载', url: 'https://winnew.cn/', category: 'system' },
