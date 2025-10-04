@@ -10,7 +10,6 @@ interface QuickLink {
 
 const links: QuickLink[] = [
   // 系统工具
-  { title: '小章软件推荐', url: 'https://www.123912.com/s/dptuVv-D1oW3', category: 'system' },
   { title: '远程安装系统', url: 'https://www.123pan.com/s/dptuVv-6fQW3.html', category: 'system' },
   { title: '启动U盘', url: 'https://www.123pan.com/s/dptuVv-yfQW3.html', category: 'system' },
   { title: '驱动备用', url: 'https://www.123pan.com/s/dptuVv-jfQW3.html', category: 'system' },
@@ -21,6 +20,11 @@ const links: QuickLink[] = [
   { title: 'PDF工具', url: 'https://stirlingpdf.io/', category: 'system' },
   { title: '网页OCR', url: 'https://web.baimiaoapp.com/', category: 'system' },
   { title: '在线剪切板', url: 'https://note.ms/itxiaozhang', category: 'system' },
+  { title: '文件共享1', url: 'https://www.wenshushu.cn/', category: 'system' },
+  { title: '文件共享2', url: 'https://quwenjian.cc/#/send', category: 'system' },
+  { title: '文件共享3', url: 'https://wormhole.app/', category: 'system' },
+  { title: '文件共享4', url: 'https://fastsend.ing/zh', category: 'system' },
+  { title: '小章软件推荐', url: 'https://www.123912.com/s/dptuVv-D1oW3', category: 'system' },
   
   // 图片工具
   { title: 'TinyPNG', url: 'https://tinypng.com/', category: 'image' },
