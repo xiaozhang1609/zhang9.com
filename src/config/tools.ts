@@ -1,4 +1,5 @@
 import { lazy } from 'react';
+import { createVersionAwareImport } from '../utils/dynamicImport';
 import { 
   Hash, 
   FileText,
@@ -35,6 +36,7 @@ export const categories = {
   games: '小游戏'
 } as const;
 
+// 使用健壮的动态导入
 export const toolsConfig: ToolConfig[] = [
   {
     id: 'computerRepair',
@@ -42,7 +44,7 @@ export const toolsConfig: ToolConfig[] = [
     name: '电脑维修',
     category: 'common',
     description: '电脑维修联系方式',
-    component: lazy(() => import('../components/tools/ComputerRepair')),
+    component: lazy(createVersionAwareImport(() => import('../components/tools/ComputerRepair'))),
     isNew: true
   },
   {
@@ -51,7 +53,7 @@ export const toolsConfig: ToolConfig[] = [
     name: '电脑维修(海外)',
     category: 'common',
     description: '海外电脑维修服务',
-    component: lazy(() => import('../components/tools/ComputerRepairGlobal'))
+    component: lazy(createVersionAwareImport(() => import('../components/tools/ComputerRepairGlobal')))
   },
   {
     id: 'computerRepairNight',
@@ -59,7 +61,7 @@ export const toolsConfig: ToolConfig[] = [
     name: '电脑维修(夜间)',
     category: 'common',
     description: '夜间电脑维修服务，通过淘宝店铺下单',
-    component: lazy(() => import('../components/tools/ComputerRepairNight'))
+    component: lazy(createVersionAwareImport(() => import('../components/tools/ComputerRepairNight')))
   },
   {
     id: 'officialWebsiteSearch',
@@ -67,7 +69,7 @@ export const toolsConfig: ToolConfig[] = [
     name: '官网查询',
     category: 'common',
     description: '快速找到软件官方网站',
-    component: lazy(() => import('../components/tools/OfficialWebsiteSearch'))
+    component: lazy(createVersionAwareImport(() => import('../components/tools/OfficialWebsiteSearch')))
   },
   {
     id: 'quickLinks',
@@ -75,7 +77,7 @@ export const toolsConfig: ToolConfig[] = [
     name: '快捷导航',
     category: 'common',
     description: '精选实用网站导航',
-    component: lazy(() => import('../components/tools/quickLinks'))
+    component: lazy(createVersionAwareImport(() => import('../components/tools/quickLinks')))
   },
   {
     id: 'winmirror',
@@ -83,7 +85,7 @@ export const toolsConfig: ToolConfig[] = [
     name: '镜像下载',
     category: 'common',
     description: 'Windows系统镜像下载',
-    component: lazy(() => import('../components/tools/WinMirror'))
+    component: lazy(createVersionAwareImport(() => import('../components/tools/WinMirror')))
   },
   {
     id: 'fileTree',
@@ -175,19 +177,16 @@ export const toolsConfig: ToolConfig[] = [
   }
 ].filter(tool => !['readingRecord', 'blog', 'subscription'].includes(tool.id));
 
-// 单独的 about 页面配置
 export const aboutConfig = {
   id: 'about',
   icon: Info,
   name: '关于',
   description: '关于章九工具箱',
-  component: lazy(() => import('../components/About'))
+  component: lazy(createVersionAwareImport(() => import('../components/About')))
 };
 
-// 获取指定ID的工具配置
 export const getToolById = (id: string) => 
   id === 'about' ? aboutConfig : toolsConfig.find(tool => tool.id === id);
 
-// 获取指定分类的工具列表
 export const getToolsByCategory = (category: keyof typeof categories) => 
   toolsConfig.filter(tool => tool.category === category);

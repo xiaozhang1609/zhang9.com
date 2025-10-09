@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'dist/**'  # 注意这里改成了 dist
+      - 'dist/**'
 
 jobs:
   deploy:
@@ -22,8 +22,34 @@ jobs:
       - name: Adding Known Hosts
         run: ssh-keyscan -p ${{ secrets.SERVER_PORT }} -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
       
-      - name: Clear target directory
-        run: ssh -p ${{ secrets.SERVER_PORT }} ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} "rm -rf ${{ secrets.DEPLOY_PATH }}/*"
+      # 零停机部署策略
+      - name: Zero-downtime deployment
+        run: |
+          TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+          DEPLOY_PATH="${{ secrets.DEPLOY_PATH }}"
+          NEW_PATH="${DEPLOY_PATH}_${TIMESTAMP}"
+          
+          # 创建新版本目录
+          ssh -p ${{ secrets.SERVER_PORT }} ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} "mkdir -p ${NEW_PATH}"
+          
+          # 上传新版本到临时目录
+          rsync -avz --delete -e "ssh -p ${{ secrets.SERVER_PORT }}" ./dist/ ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${NEW_PATH}/
+          
+          # 原子性切换（使用符号链接）
+          ssh -p ${{ secrets.SERVER_PORT }} ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} "
+            # 创建符号链接指向新版本
+            ln -sfn ${NEW_PATH} ${DEPLOY_PATH}_new &&
+            
+            # 原子性替换
+            mv ${DEPLOY_PATH}_new ${DEPLOY_PATH} &&
+            
+            # 清理旧版本（保留最近3个版本）
+            cd \$(dirname ${DEPLOY_PATH}) &&
+            ls -dt \$(basename ${DEPLOY_PATH})_* | tail -n +4 | xargs -r rm -rf
+          "
       
-      - name: Deploy with rsync
-        run: rsync -avz -e "ssh -p ${{ secrets.SERVER_PORT }}" ./dist/ ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.DEPLOY_PATH }}
+      # 验证部署
+      - name: Verify deployment
+        run: |
+          sleep 5
+          curl -f https://zhang9.com/ || exit 1
