@@ -749,6 +749,15 @@
       "alias": ["微软运行库","运行库", "Microsoft Runtimes", "VC++ Redistributable", ".NET Framework", "DirectX"],
       "textTutorial": "https://itxiaozhang.com/microsoft-runtime-download-links-vcpp-dotnet-directx/",
       "videoTutorial": "https://space.bilibili.com/3546607630944387"
+    },
+    {
+      "id": "c69",
+      "name": "Windows系统镜像下载",
+      "description": "下载原版 Windows 系统镜像的四大渠道",
+      "link": "https://itxiaozhang.com/four-channels-download-original-windows-iso/",
+      "alias": ["镜像", "镜像下载", "下载镜像", "Windows镜像", "系统镜像", "ISO下载"],
+      "textTutorial": "https://itxiaozhang.com/four-channels-download-original-windows-iso/",
+      "videoTutorial": "https://space.bilibili.com/3546607630944387"
     }
   ]
 }
