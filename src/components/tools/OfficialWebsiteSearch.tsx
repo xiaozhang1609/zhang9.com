@@ -111,7 +111,7 @@ export default function OfficialWebsiteSearch({ onToolChange }: { onToolChange?:
 
   return (
     <>
-      <SEO toolId="officialWebsiteSearch" />
+      <SEO customTitle="章九工具箱" />
       <motion.div 
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}

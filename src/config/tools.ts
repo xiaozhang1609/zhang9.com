@@ -16,7 +16,43 @@ import {
   Info,
   Link,
   Monitor,
-  Wrench
+  Wrench,
+  Code2,
+  Binary,
+  Globe2,
+  Timer,
+  CalendarDays,
+  Calculator,
+  Scale,
+  Wallet,
+  Dices,
+  Zap,
+  Smartphone,
+  GraduationCap,
+  Clock,
+  BookOpen,
+  Sigma,
+  History,
+  BadgeDollarSign,
+  Landmark,
+  TrendingUp,
+  PiggyBank,
+  Pipette,
+  Layers,
+  Sun,
+  Atom,
+  FunctionSquare,
+  Coins,
+  Gem,
+  Eye,
+  Languages,
+  AudioLines,
+  ScrollText,
+  Type as TypeIcon,
+  Scissors,
+  Sparkles,
+  Grid3x3,
+  Waves
 } from 'lucide-react';
 
 export interface ToolConfig {
@@ -33,7 +69,12 @@ export const categories = {
   common: '常用工具',
   images: '图片工具',
   text: '文本工具',
-  games: '小游戏'
+  dev: '开发工具',
+  life: '生活查询',
+  education: '教育学习',
+  finance: '金融理财',
+  design: '设计辅助',
+  fun: '益智娱乐'
 } as const;
 
 // 使用健壮的动态导入
@@ -93,14 +134,6 @@ export const toolsConfig: ToolConfig[] = [
     name: '文件目录',
     category: 'common',
     description: '生成文件目录树结构',
-    component: lazy(() => import('../components/PlaceholderTool'))
-  },
-  {
-    id: 'game2048',
-    icon: Gamepad2,
-    name: '数字游戏',
-    category: 'games',
-    description: '经典的2048小游戏',
     component: lazy(() => import('../components/PlaceholderTool'))
   },
   {
@@ -173,6 +206,196 @@ export const toolsConfig: ToolConfig[] = [
     name: '文本排版',
     category: 'text',
     description: '快速规范化文本排版格式',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  // 开发工具
+  {
+    id: 'jsonFormatter',
+    icon: Code2,
+    name: 'JSON格式化',
+    category: 'dev',
+    description: 'JSON数据美化与校验',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'base64',
+    icon: Binary,
+    name: 'Base64转换',
+    category: 'dev',
+    description: '文本/图片Base64编码转换',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'urlEncoder',
+    icon: Globe2,
+    name: 'URL编解码',
+    category: 'dev',
+    description: 'URL参数编码与解码',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'timestamp',
+    icon: Timer,
+    name: '时间戳转换',
+    category: 'dev',
+    description: 'Unix时间戳与日期转换',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  // 生活查询
+  {
+    id: 'dateCalculator',
+    icon: CalendarDays,
+    name: '日期计算',
+    category: 'life',
+    description: '日期/天数间隔计算',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'unitConverter',
+    icon: Scale,
+    name: '单位换算',
+    category: 'life',
+    description: '常用计量单位换算',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'bmiCalculator',
+    icon: Calculator,
+    name: 'BMI计算',
+    category: 'life',
+    description: '身体质量指数(BMI)计算',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'taxCalculator',
+    icon: Wallet,
+    name: '个税计算',
+    category: 'life',
+    description: '个人所得税估算工具',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  // 教育学习
+  {
+    id: 'formulaManual',
+    icon: FunctionSquare,
+    name: '常用公式',
+    category: 'education',
+    description: '数学/物理常用公式手册',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'chineseConvert',
+    icon: Languages,
+    name: '简繁转换',
+    category: 'education',
+    description: '中文简体繁体相互转换',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'pinyinConvert',
+    icon: AudioLines,
+    name: '拼音转换',
+    category: 'education',
+    description: '汉字转拼音工具',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'poetry',
+    icon: ScrollText,
+    name: '诗词鉴赏',
+    category: 'education',
+    description: '中国古诗词随机欣赏',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  // 金融理财
+  {
+    id: 'depositCalc',
+    icon: PiggyBank,
+    name: '存款计算',
+    category: 'finance',
+    description: '银行存款利息计算',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'salaryCalc',
+    icon: Coins,
+    name: '工资计算',
+    category: 'finance',
+    description: '五险一金及到手工资计算',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'goldPrice',
+    icon: Gem,
+    name: '黄金价格',
+    category: 'finance',
+    description: '实时黄金价格查询',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  // 设计辅助
+  {
+    id: 'fontPreview',
+    icon: TypeIcon,
+    name: '字体预览',
+    category: 'design',
+    description: '在线预览不同字体效果',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'clipPath',
+    icon: Scissors,
+    name: 'CSS剪辑',
+    category: 'design',
+    description: 'CSS Clip-path生成器',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'glassmorphism',
+    icon: Sparkles,
+    name: '毛玻璃',
+    category: 'design',
+    description: 'CSS毛玻璃效果生成',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'gridLayout',
+    icon: Grid3x3,
+    name: '网格布局',
+    category: 'design',
+    description: 'CSS Grid布局生成器',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'svgWave',
+    icon: Waves,
+    name: 'SVG波浪',
+    category: 'design',
+    description: 'SVG波浪分隔线生成',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  // 益智娱乐
+  {
+    id: 'randomDecision',
+    icon: Dices,
+    name: '随机决策',
+    category: 'fun',
+    description: '帮你快速做出决定',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'reactionTest',
+    icon: Zap,
+    name: '反应测试',
+    category: 'fun',
+    description: '测试你的反应速度',
+    component: lazy(() => import('../components/PlaceholderTool'))
+  },
+  {
+    id: 'handheldBarrage',
+    icon: Smartphone,
+    name: '手持弹幕',
+    category: 'fun',
+    description: '全屏滚动文字显示',
     component: lazy(() => import('../components/PlaceholderTool'))
   }
 ].filter(tool => !['readingRecord', 'blog', 'subscription'].includes(tool.id));
