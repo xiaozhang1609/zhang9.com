@@ -38,7 +38,6 @@ const links: QuickLink[] = [
   
   // 个人导航
   { title: '阅读记录', url: 'https://read.itxiaozhang.com/', category: 'personal' },
-  { title: '订阅记录', url: 'https://sub.itxiaozhang.com/', category: 'personal' },
   { title: '我的博客', url: 'https://itxiaozhang.com/', category: 'personal' }
 ];
 
